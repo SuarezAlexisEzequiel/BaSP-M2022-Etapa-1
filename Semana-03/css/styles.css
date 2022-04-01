@@ -1,0 +1,6 @@
+body {
+    background-color: #aace9b;
+}
+body > div {
+    background-color: #ffffff;
+}
