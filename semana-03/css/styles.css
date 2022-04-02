@@ -1,0 +1,17 @@
+/* global */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body-backgrounds */
+body {
+    background-color: #aace9b;
+}
+body > div {
+    background-color: #ffffff;
+}
+
+/* layout */
+.layout {
+    position: fixed;
+}
