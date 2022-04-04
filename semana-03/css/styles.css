@@ -73,3 +73,40 @@ footer p {
     text-align: center;
 }
 
+/* buttons and more = b&m */
+
+/* b&m - section settings */
+section {
+    display: block;
+    border-bottom: #49a37b;
+    border-style: solid;
+    border-width: 0px 0px 30px 0px;
+}
+
+/* b&m - a states - done */
+a, a:active, a:hover {
+    text-decoration-line: none;
+    color: #000000;
+}
+
+/* b&m - nav bar - done */
+nav div {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+nav li {
+    float: center;
+    padding: 2%;
+    margin: 2%;
+    background-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+}
+nav li a {
+    color: #000000;
+    font-size: 14px;
+    font-weight: medium;
+}
+
