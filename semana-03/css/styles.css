@@ -156,3 +156,44 @@ section>div>div>p {
     font-size: 12px;
 }
 
+/* b&m - ww settings - done */
+.ww-div {
+    display: inline-block;
+    width: 45%;
+    padding: 2.5% 0 2.5% 0;
+}
+.ww-el {
+    display: inline-block;
+    width: 18%;
+}
+.ww-el-t {
+    display: inline-block;
+    width: 50%;
+}
+
+/* b&m - au settings - done */
+.au-el , .au-el-t {
+    display: inline-block;
+    padding-bottom: 30px;
+}
+.au-el-t {
+    width: 50%;
+    margin-left: 5%;
+}
+.au-el {
+    width: 28%;
+    margin-left: 8%;
+}
+#au-el-r , #au-el-t-r {
+    float: right;
+    text-align: right;
+}
+#au-el-r {
+    margin-left: 0px;
+    margin-right: 8%
+}
+#au-el-t-r {
+    margin-left: 0px;
+    margin-right: 5%;
+}
+
