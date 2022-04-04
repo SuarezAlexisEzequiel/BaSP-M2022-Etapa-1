@@ -12,65 +12,67 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <header class="layout">
-            <img src="img/logo.png" alt="small-logo-of-a-shield-with-a-watch-inside">
-            <button>Sign Up</button>
-        </header>
-        <aside class="layout">
-            <nav>
-                <div>Shortcuts</div>
-                <ul>
-                    <li>
-                        <a href="#homepage">Homepage</a>
-                    </li>
-                    <li>
-                        <a href="#imtrackgenix">What is Trackgenix?</a>
-                    </li>
-                    <li>
-                        <a href="#what-why">Why choose Trackgenix?</a>
-                    </li>
-                    <li>
-                        <a href="#about-us">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#contact-us">Get in touch</a>
-                    </li>
-                    <li>
-                        <a href="#homepage">Login</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <footer class="layout">
-            <div id="social-media-bar">
-                <a href="https://ar.linkedin.com/" target="_blank">
-                    <img src="img/linkedin.svg" alt="linkedin-icon">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img src="img/twitter.svg" alt="twitter-icon">
-                </a>
-                <a href="https://es-la.facebook.com/" target="_blank">
-                    <img src="img/facebook.svg" alt="facebook-icon">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="img/instagram.svg" alt="instagram-icon">
-                </a>
-                <a href="https://github.com/" target="_blank">
-                    <img src="img/githab.svg" alt="git-hub-icon">
-                </a>
-            </div>
-            <p>Rosario, Argentina</p>
-            <p>Copyright © 2022 Trackgenix S.A. All rights reserved.</p>
-        </footer>
-        <section id="homepage">  
-            <h1>TRACKGENIX</h1>
-            <img src="img/background-img.jpg" alt="a-laptop-with-a-phone-aside" id="background-img">
-            <img src="img/logo.png" alt="big-logo-of-a-shield-with-a-watch-inside" id="logo-icon">
-        </section>
+        <div id="layout">
+            <header class="layout">
+                <img src="img/logo.png" alt="small-logo-of-a-shield-with-a-watch-inside">
+                <a href="#homepage" class="button" id="header-sign-up-button">Sign Up</a>
+            </header>
+            <aside class="layout">
+                <nav>
+                    <div>Shortcuts</div>
+                    <ul>
+                        <li>
+                            <a href="#homepage">Homepage</a>
+                        </li>
+                        <li>
+                            <a href="#imtrackgenix">What is Trackgenix?</a>
+                        </li>
+                        <li>
+                            <a href="#what-why">Why choose Trackgenix?</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#contact-us">Get in touch</a>
+                        </li>
+                        <li>
+                            <a href="#homepage">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <footer class="layout">
+                <div class="footer-content" id="social-media-bar">
+                    <a href="https://ar.linkedin.com/" target="_blank">
+                        <img src="img/linkedin.svg" alt="linkedin-icon">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="img/twitter.svg" alt="twitter-icon">
+                    </a>
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <img src="img/facebook.svg" alt="facebook-icon">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="img/instagram.svg" alt="instagram-icon">
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                        <img src="img/githab.svg" alt="git-hub-icon">
+                    </a>
+                </div>
+                <p class="footer-content">Rosario, Argentina</p>
+                <p class="footer-content">Copyright © 2022 Trackgenix S.A. All rights reserved.</p>
+            </footer>
+        </div>
         <main>
+            <section id="homepage">  
+                <h1>Trackgenix</h1>
+                <!-- <img src="img/background-img.jpg" alt="a-laptop-with-a-phone-aside" id="background-img"> -->
+                <img src="img/logo.png" alt="big-logo-of-a-shield-with-a-watch-inside" id="logo-icon">
+            </section>
             <section id="im-trackgenix">
-                    <h2>Hi, I'm Trackgenix by Baltazar's Team</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <h2>Hi, I'm Trackgenix by Baltazar's Team</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime ab nisi dignissimos
                     pariatur reprehenderit tempora hic, laboriosam tempore officiis eos dolorem ea? Quidem,
@@ -84,64 +86,76 @@
                     Reprehenderit, est minima.
                 </p>
                 <div>
-                    <img src="img/main-img.jpg" alt="a-watch-held-next-to-a-laptop">
+                    <!-- <img src="img/main-img.jpg" alt="a-watch-held-next-to-a-laptop"> -->
                 </div>
             </section>
             <section class="what-why">
                 <h2>What can i do & why choose me?</h2>
-                <div>
-                    <img src="img/decision-making.svg" alt="a-shield-icon">
-                    <h3>Decision Making</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
-                        hic aliquid cupiditate sed nostrum?
-                    </p>
+                <div class="ww-div">
+                    <img class="ww-el" src="img/decision-making.svg" alt="a-shield-icon">
+                    <div class="ww-el-t">
+                        <h3>Decision Making</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
+                            hic aliquid cupiditate sed nostrum?
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/reports.svg" alt="an-icon-of-a-statistical-graph">
-                    <h3>Reports and Traceability</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
-                        hic aliquid cupiditate sed nostrum?
-                    </p>
+                <div class="ww-div">
+                    <img class="ww-el" src="img/resource-management.svg" alt="a-hierarchical-tree-icon">
+                    <div class="ww-el-t">
+                        <h3>Resource Management</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
+                            hic aliquid cupiditate sed nostrum?
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/productivity-booster.svg" alt="a-paper-plane-icon">
-                    <h3>Productivity Booster</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
-                        hic aliquid cupiditate sed nostrum?
-                    </p>
+                <div class="ww-div">
+                    <img class="ww-el" src="img/reports.svg" alt="an-icon-of-a-statistical-graph">
+                    <div class="ww-el-t">
+                        <h3>Reports and Traceability</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
+                            hic aliquid cupiditate sed nostrum?
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/resource-management.svg" alt="a-hierarchical-tree-icon">
-                    <h3>Resource Management</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
-                        hic aliquid cupiditate sed nostrum?
-                    </p>
+                <div class="ww-div">
+                    <img class="ww-el" src="img/leadership.svg" alt="one-person-voice-chatting">
+                    <div class="ww-el-t">
+                        <h3>Leadership</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
+                            hic aliquid cupiditate sed nostrum?
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/leadership.svg" alt="one-person-voice-chatting">
-                    <h3>Leadership</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
-                        hic aliquid cupiditate sed nostrum?
-                    </p>
+                <div class="ww-div">
+                    <img class="ww-el" src="img/productivity-booster.svg" alt="a-paper-plane-icon">
+                    <div class="ww-el-t">
+                        <h3>Productivity Booster</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
+                            hic aliquid cupiditate sed nostrum?
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/hours-log.svg" alt="a-clock-icon">
-                    <h3>Hours Log</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
-                        hic aliquid cupiditate sed nostrum?
-                    </p>
+                <div class="ww-div">
+                    <img class="ww-el" src="img/hours-log.svg" alt="a-clock-icon">
+                    <div class="ww-el-t">
+                        <h3>Hours Log</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe est harum expedita in
+                            hic aliquid cupiditate sed nostrum?
+                        </p>
+                    </div>
                 </div>
             </section>
             <section id="about-us">
                 <h3>About Us</h3>
                 <div>
-                    <p>
+                    <p class="au-el-t">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id quia velit laudantium natus
                         odit pariatur placeat voluptatum repudiandae blanditiis in dolorum eaque rerum, temporibus
                         eos consequatur fugiat. Fugiat explicabo culpa impedit porro nihil inventore excepturi
@@ -152,11 +166,11 @@
                         voluptatum recusandae at eligendi sed quisquam nemo? Eum accusamus earum distinctio aliquam
                         dignissimos minima necessitatibus!
                     </p>
-                    <img src="img/first-office-img.jpg" alt="man-and-women-working-in-the-office">
+                    <img class="au-el" id="au-el-r" src="img/first-office-img.jpg" alt="man-and-women-working-in-the-office">
                 </div>
                 <div>
-                    <img src="img/second-office-img.jpg" alt="group-of-people-working-in-the-office">
-                    <p>
+                    <img class="au-el" src="img/second-office-img.jpg" alt="group-of-people-working-in-the-office">
+                    <p class="au-el-t" id="au-el-t-r">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id quia velit laudantium natus
                         odit pariatur placeat voluptatum repudiandae blanditiis in dolorum eaque rerum, temporibus
                         eos consequatur fugiat. Fugiat explicabo culpa impedit porro nihil inventore excepturi
@@ -172,15 +186,15 @@
             <section id="contact-us">
                 <h3>Contact Us</h3>
                 <form action="">
-                    <div>
+                    <div class="cu-div">
                         <label for="form-name">Username</label>
                         <input type="text" name="user-name" id="form-name" placeholder="Enter your Name">
                     </div>
-                    <div>
+                    <div class="cu-div">
                         <label for="form-email">Email</label>
                         <input type="email" name="user-email" id="form-email" placeholder="Enter your Email">
                     </div>
-                    <div>
+                    <div class="cu-div">
                         <label for="form-sector">Sector</label>
                         <select name="sector" id="form-sector">
                             <option value="rrhh">RR.HH.</option>
@@ -188,41 +202,41 @@
                             <option value="commercialization">COMMERCIALIZATION</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="cu-div">
                         <label for="form-phone-number">Phone number (Optional)</label>
                         <input type="number" name="f-phone-num" id="form-phone" placeholder="Enter your phone number">
                     </div>
-                    <div>
+                    <div class="cu-div">
                         <label for="form-type-a-message">Type a message</label>
                         <textarea name="message" id="form-type-a-message" cols="30" rows="10"></textarea>
                     </div>
                     <input type="submit" name="submit" value="Submit">
                 </form>
-                <div>
+                <div class="contact-info-div">
                     <div class="contact-info">
                         <img src="img/address.svg" alt="house-icon">
-                        <div>
-                            <p>12345 First Fake Street, Fake City One, Fake Country</p>
-                            <p>6789 Second Fake Street, Fake City Two, Fake Country</p>
-                            <p>10101 Third Fake Street, Fake City Three, Fake Country</p>
-                        </div>
+                        <address>
+                            12345 First Fake Street, Fake City One, Fake Country
+                            6789 Second Fake Street, Fake City Two, Fake Country
+                            10101 Third Fake Street, Fake City Three, Fake Country
+                        </address>
                     </div>
                     <div class="contact-info">
                         <img src="img/phone.svg" alt="phone-icon">
-                        <div>
-                            <p>974040000/974040001/974040002</p>
-                            <p>+99 9 999 999-9999</p>
-                            <p>+11 1 111 111-1111</p>
-                        </div>
+                        <address>
+                            974040000/974040001/974040002
+                            +99 9 999 999-9999
+                            +11 1 111 111-1111
+                        </address>
                     </div>
                     <div class="contact-info">
                         <img src="img/mail.svg" alt="mail-icon">
-                        <div>
-                            <p>Lorem-ipsum@dolorsit.amet</p>
-                            <p>consecteturadipisicing@elit.seddo</p>
-                            <p>eiusmod_tempor@incididunt.ut</p>
-                            <p>labore-et-dolore@magna.aliqua</p>
-                        </div>
+                        <address>
+                            Lorem-ipsum@dolorsit.amet
+                            consecteturadipisicing@elit.seddo
+                            eiusmod_tempor@incididunt.ut
+                            labore-et-dolore@magna.aliqua
+                        </address>
                     </div>
                 </div>
             </section>

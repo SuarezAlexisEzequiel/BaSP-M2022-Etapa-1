@@ -3,15 +3,73 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* body-backgrounds */
+/* body backgrounds and main */
 body {
     background-color: #aace9b;
 }
-body > div {
+body > main {
     background-color: #ffffff;
+    width: 80%;
+    margin-left: 20%;
 }
 
-/* layout */
-.layout {
+/* layout - done */
+header.layout {
+    background-color: #373867;
     position: fixed;
+    width: 100%;
+    height: 10%;  
+    display: block;
+    top: 0;
+    margin: 0;
+    z-index: 3;
 }
+header img {
+    width: 5%;
+    height: 75%;
+    margin: 5px auto 5px 48%;
+    display: inline;
+}
+header .button {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px 10px 10px 30%;
+    background-color: #aace9b;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #000000;
+    display: inline;
+}
+aside.layout {
+    width: 20%;
+    padding: 3% 0% 70% 0%;
+    overflow: hidden;
+    background-color: #aace9b;
+    margin-top: 50px;
+    margin-bottom: auto;
+    position: fixed;
+    z-index: 2;
+}
+footer.layout {
+    background-color: #373867;
+    width: 100%;
+    height: 10%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+footer img {
+    height: 90%;
+}
+footer #social-media-bar {
+    margin: 2px auto 2px 43%;
+}
+footer p {
+    font-size: 10px;
+    text-align: center;
+}
+
