@@ -110,3 +110,49 @@ nav li a {
     font-weight: medium;
 }
 
+/* b&m - h & p settings */
+h1 {
+    text-transform: uppercase;
+    font-style: bold;
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    font-style: bold;
+    padding: 10px;
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    font-style: bold;
+}
+h4 {
+    font-size: 18px;
+    font-style: bold;
+    padding: 5px;
+}
+h2#title-im-track {
+    width: 30%;
+}
+section>h3 {
+    text-align: center;
+    padding: 30px;
+}
+.subtitle {
+    font-size: 20px;
+    padding-top: 3px;
+}
+section>div>p {
+    font-size: 16px;
+    padding: 5px;
+    width: 30%;
+}
+section>div>div>p {
+    font-size: 14px;
+    padding: 1px;
+}
+.shortcuts-list a {
+    font-size: 12px;
+}
+
