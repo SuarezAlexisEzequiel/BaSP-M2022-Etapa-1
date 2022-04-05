@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 /* body backgrounds and main */
 body {
@@ -211,8 +212,23 @@ section>h3 {
     padding: 30px;
 }
 .subtitle {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: rgba(55, 56, 103, 0.7);
     padding-top: 3px;
+}
+.im-trackgenix-p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 15px;
+}
+#im-trackgenix-first-p {
+    margin-top: 45px;
+}
+.im-trackgenix-p, #im-trackgenix-first-p, #im-trackgenix-title, .subtitle {
+    width: 366px;
 }
 section>div>p {
     font-size: 20px;
@@ -275,23 +291,31 @@ form , .contact-info-div {
 }
 .contact-info-div {
     width: 426px;
+    height: 424px;
     float: right;
-    margin-right: 30px;
-    margin-bottom: 80px;
+    margin: 69px 30px 69px 170px;
+}
+.contact-info {
+    width: 426px;
+    height: 92px;
 }
 
 .contact-info>img , address {
     display: inline-block;
-    padding: 25px 10px 25px 0px;
+    /* padding: 25px 10px 25px 0px; */
 }
 .contact-info>img {
-    width: 15%;
+    width: 80px;
+    height: 80px;
 }
 .contact-info>address {
     width: 75%;
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 18px;
+}
+#phone-num {
+    margin: 80px 0px;
 }
 form {
     width: 260px;
@@ -307,6 +331,9 @@ label {
 }
 input , select , textarea {
     width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
     border-radius: 5px;
     border-color: #373867;
     border-style: solid;
@@ -327,10 +354,13 @@ textarea {
 .shortcuts-list {
     display: inline-block;
     width: 200px;
-    margin-left: 120px;
-    margin-bottom: 80px;
+    margin: 30px 60px 80px 60px;
     text-align: left;
 }
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
 #shortcuts-first-list {
-    margin-left: 140px
+    margin-left: 100px
 }
