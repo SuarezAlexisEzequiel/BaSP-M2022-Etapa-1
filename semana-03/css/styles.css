@@ -1,8 +1,8 @@
+/* global */
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
-/* body backgrounds and main */
+/* elements */
 body {
     background-color: #aace9b;
     font-family: 'Roboto', sans-serif;
@@ -10,61 +10,83 @@ body {
     font-size: 15px;
     line-height: 24px;
     text-align: center;
-    color: #373867
+    color: #373867;
 }
 body > main {
-    background-color: #ffffff;
     width: 1140px;
     margin-left: 300px;
+    background-color: #ffffff;
 }
-
-/* layout - done */
 header {
-    background-color: #373867;
     position: fixed;
-    width: 100%;
-    height: 91px;  
     display: block;
+    width: 100%;
+    height: 91px;
     top: 0;
     margin: 0;
-    z-index: 3;
+    background-color: #373867;
 }
 header img {
+    display: inline;
     width: 45px;
     height: 61px;
     margin: 15px auto 15px 40%;
-    display: inline;
 }
-.sign-up-button {
+header a {
+    display: inline;
     float: right;
     width: 65px;
-    line-height: 34px;
     padding: 1px 3px;
     margin: 29px 28px 0 30%;
-    background-color: #aace9b;
-    border-radius: 5px;
-    display: inline;
     box-sizing: content-box;
     top: 29px;
     right: 28px;
+    background-color: #aace9b;
+    border-radius: 5px;
+    line-height: 34px;
 }
 aside {
+    position: fixed;
     width: 300px;
     top: 0;
-    background-color: #aace9b;
     margin-top: 91px;
-    position: fixed;
-    z-index: 2;
+    background-color: #aace9b;
     text-align: left;
 }
+nav div {
+    padding-bottom: 30px;
+    margin: 70px 96px 13px 32px;
+    border-bottom: 3px solid #373867;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+nav li {
+    float: center;
+    width: 241px;
+    bottom: 50%;
+    padding: 6px;
+    margin: 0px 35px 23px 32px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px #373867;
+}
+nav li a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #373867;
+}
+a, a:active, a:hover {
+    text-decoration-line: none;
+    color: #373867;
+}
 footer {
-    background-color: #373867;
-    width: 100%;
-    height: 104px;
     display: block;
     position: fixed;
+    width: 100%;
+    height: 104px;
     bottom: 0;
-    z-index: 3;
+    background-color: #373867;
 }
 footer img {
     height: 90%;
@@ -81,114 +103,36 @@ footer p {
     text-align: center;
     color: #aace9b;
 }
-section > img {
-    width: 448px;
-    height: 472px;
-    margin: 182px 346px 180px 346px;
-}
-section#homepage {
-    background-image: url("../img/background-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 0px;
-}
-
-
-#im-trackgenix {
-    width: 1140px;
-    height: 780px;
-    display: inline-block;
-    margin: 0px;
-
-}
-.im-trackgenix-div {
-    display: inline-block;
-    width: 366px;
-    height: 678px;
-    margin-top: 75px;
-}
-section#im-trackgenix>div {
-    width: 438px;
-    float: left;
-    margin: 50px 11px 0px 100px;
-}
-
-/* buttons and more = b&m */
-
-/* b&m - section settings */
 section {
-    margin: 91px 0px 104px 0px;
-    height: 835px;
     display: block;
+    height: 835px;
+    margin: 91px 0px 104px 0px;
     box-sizing: content-box;
     border-bottom: 60px solid #49a37b;
 }
-#what-why , #about-us , #contact-us , #shortcuts {
-    margin: 0px;
-}
-section#contact-us {
-    border: none;
-    height: 707px;
-    text-align: left;
-}
-section#shortcuts {
-    width: 1050px;
-    height: 295px;
-    margin-left: 45px;
-    border: none;
-    border-top: 3px solid rgba(0 , 0 ,0 , 50%);
-}
-
-
-/* b&m - a states - done */
-a, a:active, a:hover {
-    text-decoration-line: none;
-    color: #373867;
-}
-
-/* b&m - nav bar - done */
-nav div {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
-    padding-bottom: 30px;
-    margin: 70px 96px 13px 32px;
-    border-bottom: 3px solid #373867;
-}
-nav li {
-    width: 241px;
-    float: center;
-    bottom: 50%;
-    padding: 6px;
-    margin: 0px 35px 23px 32px;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 0px #373867;
-}
-nav li a {
-    color: #373867;
-    font-size: 17px;
-    font-weight: 400;
-}
-
-/* b&m - h & p settings - comparar fuentes con figma*/  
 h1 {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 800;
-    text-align: center;
-    line-height: 47px;
     position: absolute;
     width: 245px;
     height: 47px;
     left: 745px;
     top: 224px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+section > img {
+    width: 448px;
+    height: 472px;
+    margin: 182px 346px 180px 346px;
 }
 h2 {
+    padding: 10px;
     font-size: 40px;
     font-weight: 700;
     line-height: 46px;
-    padding: 10px;
     text-align: center;
 }
 h3 {
@@ -196,39 +140,12 @@ h3 {
     font-weight: 700;
     line-height: 30px;
 }
-h4 {
-    font-size: 30px;
-    font-weight: 700;
-    padding: 5px;
-}
-h2#title-im-track {
-    width: 30%;
-}
 div>h3 {
     font-size: 26px;
 }
 section>h3 {
-    text-align: center;
     padding: 30px;
-}
-.subtitle {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
-    color: rgba(55, 56, 103, 0.7);
-    padding-top: 3px;
-}
-.im-trackgenix-p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    margin-top: 15px;
-}
-#im-trackgenix-first-p {
-    margin-top: 45px;
-}
-.im-trackgenix-p, #im-trackgenix-first-p, #im-trackgenix-title, .subtitle {
-    width: 366px;
+    text-align: center;
 }
 section>div>p {
     font-size: 20px;
@@ -236,23 +153,77 @@ section>div>p {
     line-height: 23.44px;
 }
 section>div>div>p {
-    font-size: 20px;
     padding: 3px;
-}
-.shortcuts-list a {
     font-size: 20px;
+}
+form {
+    width: 260px;
+    height: 562px;
+    margin-left: 140px;
+}
+form , .contact-info-div {
+    display: inline-block;
+}
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500 medium;
+    line-height: 16px;
+}
+input , select , textarea {
+    width: 100%;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    margin-bottom: 30px;
+    border: 2px solid #373867;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+textarea {
+    height: 100px;
 }
 span {
     display: block;
 }
-
-/* b&m - ww settings - done */
+h4 {
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 700;
+}
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+/* classes */
+.im-trackgenix-div {
+    display: inline-block;
+    width: 366px;
+    height: 678px;
+    margin-top: 75px;
+}
+.subtitle {
+    width: 366px;;
+    padding-top: 3px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: rgba(55, 56, 103, 0.7);
+}
+.im-trackgenix-p {
+    width: 366px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
 .ww-div {
     display: inline-block;
     width: 438px;
     height: 100px;
-    margin: 50px 56px 50px 36px;
-    align-content: center;
+    margin: 70px 56px 30px 36px;
 }
 .ww-el {
     display: inline-block;
@@ -265,8 +236,6 @@ span {
     height: 92px;
     text-align: left;
 }
-
-/* b&m - au settings - done */
 .au-el , .au-el-t {
     display: inline-block;
     margin: 81px 66px 0px 30px;
@@ -279,87 +248,93 @@ span {
 .au-el {
     width: 364px;
 }
-#au-el-r , #au-el-t-r {
-    margin: 81px 30px 0px 0px;
-    text-align: right; 
-} 
-
-
-/* b&m - cu settings */
-form , .contact-info-div {
-    display: inline-block;
-}
 .contact-info-div {
+    float: right;
     width: 426px;
     height: 424px;
-    float: right;
     margin: 69px 30px 69px 170px;
 }
 .contact-info {
     width: 426px;
     height: 92px;
 }
-
-.contact-info>img , address {
-    display: inline-block;
-    /* padding: 25px 10px 25px 0px; */
-}
 .contact-info>img {
+    display: inline-block;
     width: 80px;
     height: 80px;
 }
 .contact-info>address {
+    display: inline-block;
     width: 75%;
     padding-top: 0px;
     padding-bottom: 0px;
     font-size: 18px;
 }
-#phone-num {
-    margin: 80px 0px;
-}
-form {
-    width: 260px;
-    height: 562px;
-    margin-left: 140px;
-}
-label {
-    font-size: 14px;
-    font-weight: 500 medium;
-    line-height: 16px;
-    display: block;
-    margin-bottom: 7px;
-}
-input , select , textarea {
-    width: 100%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    border-radius: 5px;
-    border-color: #373867;
-    border-style: solid;
-    border-width: 2px;
-    padding-top: 7.5px;
-    padding-bottom: 7.5px;
-    margin-bottom: 30px;
-} 
-textarea {
-    height: 100px;
-}
 .submit {
     margin: 10px 0px 10px 0px;
     background-color: #aace9b;
 }
-
-/* b&m - shortcuts settings - done */
 .shortcuts-list {
     display: inline-block;
     width: 200px;
     margin: 30px 60px 80px 60px;
     text-align: left;
 }
-ol {
-    list-style-type: decimal;
-    list-style-position: inside;
+.shortcuts-list a {
+    font-size: 20px;
+}
+/* IDS */
+#homepage {
+    margin-bottom: 0px;
+    background-image: url("../img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#im-trackgenix {
+    display: inline-block;
+    width: 1140px;
+    height: 780px;
+    margin: 0px;
+}
+#title-im-track {
+    width: 30%;
+}
+#im-trackgenix>div {
+    float: left;
+    width: 438px;
+    margin: 50px 11px 0px 100px;
+}
+#im-trackgenix-first-p {
+    margin-top: 45px;
+}
+#im-trackgenix-first-p, #im-trackgenix-title {
+    width: 366px;
+}
+#what-why , #about-us , #contact-us , #shortcuts {
+    margin: 0px;
+}
+#what-why-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#au-el-r , #au-el-t-r {
+    margin: 81px 30px 0px 0px;
+    text-align: right;
+}
+#contact-us {
+    height: 707px;
+    border: none;
+    text-align: left;
+}
+#phone-num {
+    margin: 80px 0px;
+}
+#shortcuts {
+    width: 1050px;
+    height: 295px;
+    margin-left: 45px;
+    border: none;
+    border-top: 3px solid rgba(0 , 0 ,0 , 50%);
 }
 #shortcuts-first-list {
     margin-left: 100px
