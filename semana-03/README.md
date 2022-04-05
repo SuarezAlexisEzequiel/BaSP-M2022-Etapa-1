@@ -13,6 +13,10 @@ Welcome to the Trackgenix project. Trackgenix will be an app that will improve t
 
 3. By clicking on the LogIn or SingUp button, you can access the corresponding login or registration menu. Exclusive for company staff.
 ```
+### Week 01
+...
+In Week 01, we use Figma to develop the screenflow for Trackgenix app
+...
 
 ### Week 02
 ...
@@ -21,7 +25,7 @@ In Week 02, the index.html and the README.md files was created. The index.html f
 
 ### Week 03
 ...
-In Week 02, the css files were created:
+In Week 03, the css files were created:
 -styles.css,
 -reset.css
 These determine the aesthetic for the Trackgenix landing's page.
