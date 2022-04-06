@@ -106,9 +106,9 @@ footer p {
 section {
     display: block;
     height: 835px;
-    margin: 91px 0px 104px 0px;
+    margin: 31px 0px 104px 0px;
     box-sizing: content-box;
-    border-bottom: 60px solid #49a37b;
+    border-top: 60px solid #49a37b;
 }
 h1 {
     position: absolute;
@@ -323,7 +323,6 @@ ol {
 }
 #contact-us {
     height: 707px;
-    border: none;
     text-align: left;
 }
 #phone-num {
@@ -333,7 +332,6 @@ ol {
     width: 1050px;
     height: 295px;
     margin-left: 45px;
-    border: none;
     border-top: 3px solid rgba(0 , 0 ,0 , 50%);
 }
 #shortcuts-first-list {
