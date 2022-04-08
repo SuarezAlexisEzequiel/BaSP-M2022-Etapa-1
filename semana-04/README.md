@@ -44,7 +44,12 @@ These determine the aesthetic for the Trackgenix landing page.
 
 ### Week 04
 ```
-In week 04 the css files were modified to add the flexbox property. Using this, the Trackgenix landing page became Responsive Design.
+In week 04 the css files were modified to add the flexbox property. New css files were created:
+-header.css
+-sidebar.css
+-footer.css
+-main.css
+Using this files with flexbox property, the Trackgenix landing page became Responsive Design.
 ```
 
 > Alexis Ezequiel Suarez, member of the Trackgenix development team.
