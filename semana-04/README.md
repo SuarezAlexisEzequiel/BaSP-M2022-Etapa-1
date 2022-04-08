@@ -5,7 +5,11 @@ of each of its members. And so also a control of the progress and viability of t
 
 ## How to initiate Trackgenix landing page:
 ```
-1. Open index.html with your browser
+Open index.html with your browser
+
+or
+
+Get into https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-04/index.html
 ```
 ## How to use Trackgenix landing page:
 ```
@@ -27,7 +31,7 @@ In Week 01, we use Figma to develop the screenflow for Trackgenix app
 ### Week 02
 ```
 In Week 02, the index.html and the README.md files was created.
-The index.html file is the html structure of the Trackgenix landing's page.
+The index.html file is the html structure of the Trackgenix landing page.
 ```
 
 ### Week 03
@@ -35,7 +39,12 @@ The index.html file is the html structure of the Trackgenix landing's page.
 In Week 03, the css files were created:
 -styles.css
 -reset.css
-These determine the aesthetic for the Trackgenix landing's page.
+These determine the aesthetic for the Trackgenix landing page.
+```
+
+### Week 04
+```
+In week 04 the css files were modified to add the flexbox property. Using this, the Trackgenix landing page became Responsive Design.
 ```
 
 > Alexis Ezequiel Suarez, member of the Trackgenix development team.
