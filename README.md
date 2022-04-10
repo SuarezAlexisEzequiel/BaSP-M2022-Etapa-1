@@ -4,13 +4,13 @@ Trackgenix will be an app that will improve the efficiency in the control of hou
 of each of its members. And so also a control of the progress and viability of these projects
 
 ## How to initiate Trackgenix landing page:
-```
+
 Open index.html with your browser
 
 or
 
 Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-04/index.html)
-```
+
 ## How to use Trackgenix landing page:
 ```
 1. On the landing page you will find various information about the app.
