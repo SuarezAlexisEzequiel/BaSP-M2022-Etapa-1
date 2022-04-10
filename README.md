@@ -9,7 +9,7 @@ Open index.html with your browser
 
 or
 
-Get into https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-04/index.html
+Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-04/index.html)
 ```
 ## How to use Trackgenix landing page:
 ```
