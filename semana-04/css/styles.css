@@ -1,0 +1,25 @@
+/* global */
+* {
+    box-sizing: border-box;
+}
+/* elements */
+body {
+    background-color: #aace9b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #373867;
+}
+body > main {
+    margin-left: 300px;
+    background-color: #ffffff;
+}
+
+/* Breakpoints */
+@media screen and (max-width: 768px) {
+    body > main {
+        margin-left: 0px;
+    }
+}
