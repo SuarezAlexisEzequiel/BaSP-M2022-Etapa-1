@@ -6,3 +6,33 @@ section {
     box-sizing: content-box;
     border-top: 60px solid #49a37b;
 }
+form {
+    width: 80%;
+    height: 562px;
+    /* margin-left: 140px; */
+}
+/* Classes */
+
+/* ID's */
+#homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    background-image: url("../img/background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#homepage-img {
+    width: 30%;
+    height: 30%;
+}
+#im-trackgenix {
+    display: flex;
+    flex-wrap: wrap;
+}
+#im-trackgenix-img {
+    width: 85%;
+    margin: auto;
+}

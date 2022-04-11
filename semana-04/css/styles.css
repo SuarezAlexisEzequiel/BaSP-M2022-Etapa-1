@@ -16,10 +16,10 @@ body > main {
     background-color: #ffffff;
 }
 h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
     /* text-align: center; */
-    line-height: 47px;
+    line-height: 37px;
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -70,7 +70,8 @@ ol {
     list-style-position: inside;
 }
 .subtitle {
-    /* width: 366px; = 26%*/
+    display: inline-block;
+    width: 80%;
     padding-top: 3px;
     font-weight: 700;
     font-size: 30px;
@@ -81,6 +82,9 @@ ol {
     font-size: 26px;
 }
 .im-trackgenix-item-p , .about-us-item-p {
+    display: inline-block;
+    width: 80%;
+    margin: 20px auto 20px auto;
     font-size: 20px;
     font-weight: 400;
     line-height: 23.44px;
