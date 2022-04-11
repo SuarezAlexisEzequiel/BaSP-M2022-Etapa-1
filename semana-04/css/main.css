@@ -26,9 +26,6 @@ address {
     align-items: center;
     width: 75%;
 }
-/* .flex-container-whatwhy-div > img {
-    width: 50%;
-} */
 .contact-info-div {
     display: flex;
     width: 95%;
@@ -39,7 +36,6 @@ address {
     width: 90%;
 }
 .shortcuts-list {
-    /* display: inline-block; */
     text-align: center;
 }
 /* ID's */
@@ -49,7 +45,6 @@ address {
     justify-content: center;
     align-items: center;
     height: 85vh;
-    /* margin-bottom: 0px; */
     background-image: url("../img/background-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +52,6 @@ address {
 #homepage-img {
     width: 45%;
     height: 45%;
-    /* margin-bottom: 0px; */
 }
 #im-trackgenix {
     display: flex;
@@ -67,14 +61,26 @@ address {
     width: 85%;
     margin: auto;
 }
+#numbers-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 #shortcuts {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-bottom: 110px solid #ffffff;
-    /* margin: auto; */
 }
-/* #first-shortcuts-list {
-    margin-left: 13%;
-} */
+
+/* MQ */
+@media screen and (min-width: 480px) {
+    #shortcuts {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .shortcuts-list {
+        display: inline-block;
+    }
+}
