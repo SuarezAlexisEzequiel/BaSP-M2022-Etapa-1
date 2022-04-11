@@ -1,0 +1,8 @@
+/* Elements */
+section {
+    display: block;
+    /* height: 835px; */
+    margin: 31px 0px 104px 0px;
+    box-sizing: content-box;
+    border-top: 60px solid #49a37b;
+}

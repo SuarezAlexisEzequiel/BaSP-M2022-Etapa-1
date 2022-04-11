@@ -1,4 +1,6 @@
+/* Elements */
 aside {
+    display: none;
     position: fixed;
     width: 300px;
     top: 0;
@@ -32,10 +34,9 @@ a, a:active, a:hover {
     text-decoration-line: none;
     color: #373867;
 }
-
-
-@media screen and (max-width: 768px) {
+/* MQ */
+@media screen and (min-width: 768px) {
     aside {
-        display: none;
+        display: block;
     }
 }
