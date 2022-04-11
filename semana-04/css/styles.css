@@ -42,6 +42,7 @@ label {
     font-size: 14px;
     font-weight: 500 medium;
     line-height: 16px;
+    text-align: left;
 }
 input , select , textarea {
     width: 100%;
@@ -90,8 +91,10 @@ ol {
     line-height: 23.44px;
 }
 .whatwhy-item-p {
-    padding: 3px;
-    font-size: 20px;
+    display: inline-block;
+    width: 70%;
+    margin-bottom: 15px;
+    font-size: 16px;
     text-align: left;
 }
 .submit {
@@ -99,15 +102,17 @@ ol {
     background-color: #aace9b;
 }
 .shortcuts-list {
-    /* display: inline-block;
-    width: 200px; 14% 
-    margin: 30px 60px 80px 60px; */
     text-align: left;
 }
 .shortcuts-list a {
     font-size: 20px;
 }
-
+#about-us-item-p-left {
+    text-align: left;
+}
+#about-us-item-p-right {
+    text-align: right;
+}
 
 /* Breakpoints */
 @media screen and (min-width: 768px) {
