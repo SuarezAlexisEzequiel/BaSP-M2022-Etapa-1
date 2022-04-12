@@ -38,7 +38,7 @@ label {
     display: block;
     margin-bottom: 7px;
     font-size: 14px;
-    font-weight: 500 medium;
+    font-weight: 500;
     line-height: 16px;
     text-align: left;
 }
@@ -80,14 +80,8 @@ ol {
 }
 .whatwhy-item-title {
     font-size: 26px;
-}
-.im-trackgenix-item-p , .about-us-item-p {
-    display: inline-block;
-    width: 80%;
-    margin: 20px auto 20px auto;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23.44px;
+    text-align: left;
+    padding: 0px;
 }
 .whatwhy-item-p {
     display: inline-block;
@@ -95,6 +89,17 @@ ol {
     margin-bottom: 15px;
     font-size: 16px;
     text-align: left;
+}
+.im-trackgenix-item-p , .about-us-item-p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    margin: 40px auto 40px auto;
+}
+.contact-info-img {
+    width: 30%;
+    min-width: 50px;
+    max-width: 80px;
 }
 .submit {
     margin: 10px 0px 10px 0px;
@@ -117,8 +122,21 @@ ol {
 }
 
 /* Breakpoints */
+@media screen and (min-width: 480px) and (max-width: 550px) {
+    span {
+        font-size: 10px;
+    }
+}
 @media screen and (min-width: 768px) {
     body > main {
+        margin-left: 30%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    body > main {
         margin-left: 300px;
+    }
+    span {
+        font-size: 20px;
     }
 }

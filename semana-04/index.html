@@ -74,7 +74,7 @@
                 <h2>What can i do & why choose me?</h2>
                 <div class="flex-container-section">
                     <div class="flex-container-whatwhy-div">
-                        <img src="img/decision-making.svg" alt="A shield icon">
+                        <img class="what-why-img" src="img/decision-making.svg" alt="A shield icon">
                         <div class="flex-container-whatwhy-text">
                             <h3 class="whatwhy-item-title">Decision Making</h3>
                             <p class="whatwhy-item-p">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="flex-container-whatwhy-div">
-                        <img src="img/resource-management.svg" alt="A hierarchical tree icon">
+                        <img class="what-why-img" src="img/resource-management.svg" alt="A hierarchical tree icon">
                         <div class="flex-container-whatwhy-text">
                             <h3 class="whatwhy-item-title">Resource Management</h3>
                             <p class="whatwhy-item-p">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="flex-container-whatwhy-div">
-                        <img src="img/reports.svg" alt="An icon of a statistical graph">
+                        <img class="what-why-img" src="img/reports.svg" alt="An icon of a statistical graph">
                         <div class="flex-container-whatwhy-text">
                             <h3 class="whatwhy-item-title">Reports and Traceability</h3>
                             <p class="whatwhy-item-p">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <div class="flex-container-whatwhy-div">
-                        <img src="img/leadership.svg" alt="One person voice chatting">
+                        <img class="what-why-img" src="img/leadership.svg" alt="One person voice chatting">
                         <div class="flex-container-whatwhy-text">
                             <h3 class="whatwhy-item-title">Leadership</h3>
                             <p class="whatwhy-item-p">
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="flex-container-whatwhy-div">
-                        <img src="img/productivity-booster.svg" alt="A paper plane icon">
+                        <img class="what-why-img" src="img/productivity-booster.svg" alt="A paper plane icon">
                         <div class="flex-container-whatwhy-text">
                             <h3 class="whatwhy-item-title">Productivity Booster</h3>
                             <p class="whatwhy-item-p">
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                     <div class="flex-container-whatwhy-div">
-                        <img src="img/hours-log.svg" alt="A clock icon">
+                        <img class="what-why-img" src="img/hours-log.svg" alt="A clock icon">
                         <div class="flex-container-whatwhy-text">
                             <h3 class="whatwhy-item-title">Hours Log</h3>
                             <p class="whatwhy-item-p">
@@ -164,63 +164,65 @@
             </section>
             <section id="contact-us">
                 <h3>Contact Us</h3>
-                <form action="">
-                    <div>
-                        <label for="form-name">Username</label>
-                        <input type="text" name="user-name" id="form-name" placeholder="Click on me to write">
-                    </div>
-                    <div>
-                        <label for="form-email">Email</label>
-                        <input type="email" name="user-email" id="form-email" placeholder="Click on me to write">
-                    </div>
-                    <div>
-                        <label for="form-sector">Sector</label>
-                        <select name="sector" id="form-sector">
-                            <option value="rrhh">RR.HH.</option>
-                            <option value="systems">SYSTEMS</option>
-                            <option value="commercialization">COMMERCIALIZATION</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="form-phone-number">Phone number (Optional)</label>
-                        <input type="number" name="f-ph-num" id="form-phone" placeholder="Click on me to write">
-                    </div>
-                    <div>
-                        <label for="form-type-a-message">Type a message</label>
-                        <textarea name="message" cols="30" rows="10" placeholder="Click on me to write"></textarea>
-                    </div>
-                    <input class="submit" type="submit" name="submit" value="Submit">
-                </form>
-                <div class="flex-container-contact-info-div">
-                    <div class="contact-info-div">
-                        <img src="img/address.svg" alt="House icon">
-                        <address>
-                            <span>Lorem ipsum dolor sit amet,</span>
-                            <span>consectetur adipisicing elit, sed do</span>
-                            <span>eiusmod tempor incididunt ut labore</span>
-                            <span>et dolore magna aliqua.</span>
-                        </address>
-                    </div>
-                    <div class="contact-info-div">
-                        <img src="img/phone.svg" alt="Phone icon">
-                        <address>
-                            <div id="numbers-div">
-                                <span>974040000/</span>
-                                <span>974040001/</span>
-                                <span>974040002</span>
-                            </div>
-                            <span>+99 9 999 999-9999</span>
-                            <span>+11 1 111 111-1111</span>
-                        </address>
-                    </div>
-                    <div class="contact-info-div">
-                        <img src="img/mail.svg" alt="Mail icon">
-                        <address>
-                            <span>Lorem-ipsum@dolorsit.amet</span>
-                            <span>consecteturadipisicing@elit.seddo</span>
-                            <span>eiusmod_tempor@incididunt.ut</span>
-                            <span>labore-et-dolore@magna.aliqua</span>
-                        </address>
+                <div class="flex-container-contact-us">
+                    <form action="">
+                        <div>
+                            <label for="form-name">Username</label>
+                            <input type="text" name="user-name" id="form-name" placeholder="Click on me to write">
+                        </div>
+                        <div>
+                            <label for="form-email">Email</label>
+                            <input type="email" name="user-email" id="form-email" placeholder="Click on me to write">
+                        </div>
+                        <div>
+                            <label for="form-sector">Sector</label>
+                            <select name="sector" id="form-sector">
+                                <option value="rrhh">RR.HH.</option>
+                                <option value="systems">SYSTEMS</option>
+                                <option value="commercialization">COMMERCIALIZATION</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="form-phone-number">Phone number (Optional)</label>
+                            <input type="number" name="f-ph-num" id="form-phone" placeholder="Click on me to write">
+                        </div>
+                        <div>
+                            <label for="form-type-a-message">Type a message</label>
+                            <textarea name="message" cols="30" rows="10" placeholder="Click on me to write"></textarea>
+                        </div>
+                        <input class="submit" type="submit" name="submit" value="Submit">
+                    </form>
+                    <div class="flex-container-contact-info-div">
+                        <div class="contact-info-div">
+                            <img class="contact-info-img" src="img/address.svg" alt="House icon">
+                            <address>
+                                <span>Lorem ipsum dolor sit amet,</span>
+                                <span>consectetur adipisicing elit, sed do</span>
+                                <span>eiusmod tempor incididunt ut labore</span>
+                                <span>et dolore magna aliqua.</span>
+                            </address>
+                        </div>
+                        <div class="contact-info-div">
+                            <img class="contact-info-img" src="img/phone.svg" alt="Phone icon">
+                            <address>
+                                <div id="numbers-div">
+                                    <span>974040000/</span>
+                                    <span>974040001/</span>
+                                    <span>974040002</span>
+                                </div>
+                                <span>+99 9 999 999-9999</span>
+                                <span>+11 1 111 111-1111</span>
+                            </address>
+                        </div>
+                        <div class="contact-info-div">
+                            <img class="contact-info-img" src="img/mail.svg" alt="Mail icon">
+                            <address class="email-address">
+                                <span>Lorem-ipsum@dolorsit.amet</span>
+                                <span>consecteturadipisicing@elit.seddo</span>
+                                <span>eiusmod_tempor@incididunt.ut</span>
+                                <span>labore-et-dolore@magna.aliqua</span>
+                            </address>
+                        </div>
                     </div>
                 </div>
             </section>
