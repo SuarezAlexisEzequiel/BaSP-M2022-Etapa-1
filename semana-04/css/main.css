@@ -24,7 +24,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    flex: 80%;
 }
 .contact-info-div {
     display: flex;
@@ -32,8 +32,22 @@ address {
     justify-content: space-around;
     margin: 20px 0px 20px 0px;
 }
+.flex-container-about-us-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex-container-about-us-div p , .flex-container-about-us-div img {
+    flex: 85%;
+}
 .about-us-item-img {
     width: 90%;
+}
+.flex-container-contact-info-div {
+    display: flex;
+    flex-direction: column;
+    flex: 80%;
 }
 .shortcuts-list {
     text-align: center;
@@ -55,11 +69,23 @@ address {
 }
 #im-trackgenix {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
+#im-trackgenix-left , #im-trackgenix-rigt {
+    flex: 80%;
+    align-self: center;
+}
 #im-trackgenix-img {
-    width: 85%;
-    margin: auto;
+    width: 80%;
+    margin:auto;
+}
+#about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 #numbers-div {
     display: flex;
@@ -82,5 +108,26 @@ address {
     }
     .shortcuts-list {
         display: inline-block;
+    }
+    #im-trackgenix-left , #im-trackgenix-rigt {
+        flex: 45%;
+    }
+    #im-trackgenix-img {
+        margin: 0%;
+    }
+    .flex-container-whatwhy-div {
+        flex: 40%;
+    }
+    .flex-container-about-us-div p {
+        flex: 70%;
+    }
+    .flex-container-about-us-div img {
+        flex: 25%;
+    }
+    .flex-container-contact-info-div {
+        flex: 40%;
+    }
+    form {
+        width: 40%;
     }
 }
