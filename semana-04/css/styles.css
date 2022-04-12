@@ -2,7 +2,8 @@
 * {
     box-sizing: border-box;
 }
-/* elements */
+
+/* Elements */
 body {
     background-color: #aace9b;
     font-family: 'Roboto', sans-serif;
@@ -69,6 +70,8 @@ ol {
     list-style-type: decimal;
     list-style-position: inside;
 }
+
+/* Classes */
 .subtitle {
     display: inline-block;
     width: 80%;
@@ -78,10 +81,16 @@ ol {
     line-height: 35px;
     color: rgba(55, 56, 103, 0.7);
 }
+.im-trackgenix-item-p , .about-us-item-p {
+    margin: 40px auto 40px auto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+}
 .whatwhy-item-title {
+    padding: 0px;
     font-size: 26px;
     text-align: left;
-    padding: 0px;
 }
 .whatwhy-item-p {
     display: inline-block;
@@ -89,12 +98,6 @@ ol {
     margin-bottom: 15px;
     font-size: 16px;
     text-align: left;
-}
-.im-trackgenix-item-p , .about-us-item-p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23.44px;
-    margin: 40px auto 40px auto;
 }
 .contact-info-img {
     width: 30%;
@@ -111,6 +114,8 @@ ol {
 .shortcuts-list a {
     font-size: 20px;
 }
+
+/* ID's */
 #about-us-item-p-left {
     text-align: left;
 }
@@ -122,11 +127,6 @@ ol {
 }
 
 /* Breakpoints */
-@media screen and (min-width: 480px) and (max-width: 550px) {
-    span {
-        font-size: 10px;
-    }
-}
 @media screen and (min-width: 768px) {
     body > main {
         margin-left: 30%;
@@ -135,8 +135,5 @@ ol {
 @media screen and (min-width: 1000px) {
     body > main {
         margin-left: 300px;
-    }
-    span {
-        font-size: 20px;
     }
 }

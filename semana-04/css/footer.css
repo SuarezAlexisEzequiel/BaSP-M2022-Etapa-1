@@ -1,3 +1,4 @@
+/* Elements */
 footer {
     display: flex;
     position: fixed;
@@ -12,14 +13,16 @@ footer {
 footer img {
     height: 90%;
 }
-footer > div {
-    width: 216px;
-    height: 32px;
-}
 footer p {
     font-size: 14px;
     font-weight: 700;
     line-height: 15px;
     text-align: center;
     color: #aace9b;
+}
+
+/* ID's */
+#social-media-bar {
+    width: 216px;
+    height: 32px;
 }

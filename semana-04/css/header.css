@@ -1,3 +1,4 @@
+/* Elements */
 header {
     position: fixed;
     display: flex;
@@ -19,6 +20,7 @@ header a {
     line-height: 34px;
 }
 
+/* ID's */
 #burguer-icon {
     width: 149px;
     height: 90px;
@@ -28,7 +30,7 @@ header a {
     height: 61px;
 }
 
-/* MQ */
+/* Breakpoint */
 @media screen and (min-width: 768px) {
     #burguer-icon {
         visibility: hidden;
