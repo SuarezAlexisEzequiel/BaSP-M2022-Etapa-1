@@ -11,6 +11,10 @@ or
 
 Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-04/index.html)
 
+and
+
+Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-05/index.html) for get into the html page where the js exercises for week 5 are linked.
+
 ## How to use Trackgenix landing page:
 ```
 1. On the landing page you will find various information about the app.
@@ -37,19 +41,32 @@ The index.html file is the html structure of the Trackgenix landing page.
 ### Week 03
 ```
 In Week 03, the css files were created:
--styles.css
--reset.css
+- styles.css
+- reset.css
 These determine the aesthetic for the Trackgenix landing page.
 ```
 
 ### Week 04
 ```
-In week 04 the css files were modified to add the flexbox property. New css files were created:
--header.css
--sidebar.css
--footer.css
--main.css
+In week 04 the css files were modified to add the flexbox property. New .css files were created:
+- header.css
+- sidebar.css
+- footer.css
+- main.css
 Using this files with flexbox property, the Trackgenix landing page became Responsive Design.
 ```
+
+### Week 05
+```
+In week 05 we get practice with exercises of JS. New .js files were created:
+- 01_variables_and_operators.js
+- 02_strings.js
+- 03_arrays.js
+- 04_if_else.js
+- 05_for.js
+- 06_functions.js
+These exercises contain the most basic and essential material for js 
+```
+
 
 > Alexis Ezequiel Suarez, member of the Trackgenix development team.
