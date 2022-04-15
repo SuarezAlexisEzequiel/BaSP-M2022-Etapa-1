@@ -46,14 +46,15 @@ console.log('In "' + strFourteen + '" we see the space in ' + spacePosOne + 'th 
 /* Punto F - Crear una variable de tipo string con al menos 2 palabras largas
 (10 caracteres y algun espacio entre medio). Utilizar los metodos de los ejercicios
 anteriores para generar un nuevo string que tenga la primera letra de ambas palabras
-en mayuscula y las demas letras en minuscula (utilizar indexOf, substring, 
+en mayuscula y las demas letras en minuscula (utilizar indexOf, substring,
 toUpperCase, toLowerCase y el operador +) */
 
 console.log('\n-Exercise 2.f');
-var strFifteen = "trACKGenIX dEVELopmENT"
+var strFifteen = "trACKGenIX dEVELopmENT";
 var spacePosTwo = strFifteen.indexOf(" ",0);
 var strFirstWord = strFifteen.substring(1,0).toUpperCase() + strFifteen.substring(spacePosTwo,1).toLowerCase();
 var strSpace = strFifteen.substring(spacePosTwo+1,spacePosTwo);
-var strLastWord = strFifteen.substring(spacePosTwo+2,spacePosTwo+1).toUpperCase() + strFifteen.substring(strFifteen.length, spacePosTwo+2).toLowerCase();
+var strLastWord = strFifteen.substring(spacePosTwo+2,spacePosTwo+1).toUpperCase() +
+strFifteen.substring(strFifteen.length, spacePosTwo+2).toLowerCase();
 var strSixteen = strFirstWord + strSpace + strLastWord;
 console.log('The correct way for write "' + strFifteen + '" is = ' + strSixteen);
