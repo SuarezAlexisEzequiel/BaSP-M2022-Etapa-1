@@ -15,7 +15,7 @@ console.log('\n-Exercise 1.b:');
 var strOne = prompt('Write the 1st word');
 var strTwo = prompt('Write the 2nd word');
 var strThree = strOne + strTwo;
-console.log ('strOne (' + strOne + ') ' + 'strTwo (' + strTwo + ') = strThree (' + strThree + ')');
+console.log (strOne + ' + ' + strTwo + ' = ' + strThree);
 
 /* Punto C - Crear dos variables de tipo String y sumar el largo de cada variable (cant. de letras del string)
 guardando el resultado de la suma en una 3er variable (utilizar length) */
@@ -24,6 +24,6 @@ console.log('\n-Exercise 1.c:');
 var strFour = prompt('Write the 1st word');
 var strFive = prompt('Write the 2nd word');
 var strSix = strFour + strFive;
-console.log ('strFour = ' + strFour + '(length = ' + strFour.length + ')');
-console.log ('strFive = ' + strFive + '(lenght = ' + strFive.length + ')');
-console.log ('strSix = ' + strSix + '(lenght = ' + strSix.length + ')');
+console.log (strFour + '(length = ' + strFour.length + ')');
+console.log (strFive + '(lenght = ' + strFive.length + ')');
+console.log (strSix + '(lenght = ' + strSix.length + ')');

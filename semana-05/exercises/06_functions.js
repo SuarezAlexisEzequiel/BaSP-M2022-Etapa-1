@@ -5,12 +5,14 @@ y guardar el resultado en una variable, mostrando el valor de dicha variable en 
 
 console.log('\n-Exercise 6.a');
 function sumA(a,b) {
-    return a + b;
+    sum = a + b;
+    outcome = a + ' + ' + b + ' = ' + sum;
+    return outcome;
 }
 var sumNum1 = parseFloat(prompt('Write the 1st number'));
 var sumNum2 = parseFloat(prompt('Write the 2nd number'));
 var sumFunction1 = sumA(sumNum1,sumNum2);
-console.log(sumNum1 + ' + ' + sumNum2 + ' = ' + sumFunction1);
+console.log(sumFunction1);
 
 /* Punto B - A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un
 número, mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como resultado. */
@@ -19,7 +21,8 @@ console.log('\n-Exercise 6.b');
 function sumB(a,b) {
     if (isNaN(parseFloat(a)) != true) {
         if (isNaN(parseFloat(b)) != true) {
-            outcome = a + b;
+            sum = a + b;
+            outcome = a + ' + ' + b + ' = ' + sum;
         } else {
             outcome ='"' + b + '" is not a number (' + parseFloat(b) + ')';
         }
@@ -33,7 +36,7 @@ function sumB(a,b) {
 var sumNum3 = prompt('Write the 1st number');
 var sumNum4 = prompt('Write the 2nd number');
 var sumFunction2 = sumB(sumNum3,sumNum4);
-console.log(sumNum3 + ' + ' + sumNum4 + ' = ' + sumFunction2);
+console.log(sumFunction2);
 
 /* Punto C - Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un
 número entero. */
@@ -61,22 +64,26 @@ function sumD(a,b) {
             b = parseFloat(b);
             if (a % 1 === 0) {
                 if (b % 1 === 0) {
-                    outcome = a + b;
+                    sum = a + b;
+                    outcome = a + ' + ' + b + ' = ' + sum;
                 } else {
                     window.alert(b + ' is not an integer. So it was rounded to ' + Math.round(b));
                     console.log(b + ' is not an integer. So it was rounded to ' + Math.round(b));
-                    outcome = a + Math.round(b);
+                    sum = a + Math.round(b);
+                    outcome = a + ' + ' + Math.round(b) + ' = ' + sum;
                 }
             } else if (b % 1 === 0) {
                 window.alert(a + ' is not an integer. So it was rounded to ' + Math.round(a));
                 console.log(a + ' is not an integer. So it was rounded to ' + Math.round(a));
-                outcome = Math.round(a) + b;
+                sum = Math.round(a) + b;
+                outcome = Math.round(a) + ' + ' + b + ' = ' + sum;
             } else {
                 window.alert(a + ' and ' + b + ' are not integer. So they was rounded to '
                 + Math.round(a) + ' and ' + Math.round(b));
                 console.log(a + ' and ' + b + ' are not integer. So they was rounded to '
                 + Math.round(a) + ' and ' + Math.round(b));
-                outcome = Math.round(a) + Math.round(b);
+                sum = Math.round(a) + Math.round(b);
+                outcome = Math.round(a) + ' + ' + Math.round(b) + ' = ' + sum;
             }
         } else {
             outcome ='"' + b + '" is not a number';
@@ -91,7 +98,7 @@ function sumD(a,b) {
 var sumNum5 = prompt('Write the 1st number');
 var sumNum6 = prompt('Write the 2nd number');
 var sumFunction3 = sumD(sumNum5,sumNum6);
-console.log(Math.round(sumNum5) + ' + ' + Math.round(sumNum6) + ' = ' + sumFunction3);
+console.log(sumFunction3);
 
 /* Punto E - Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función
 suma probando que todo siga funcionando igual. */
@@ -110,7 +117,8 @@ function isInteger(a) {
 function sumB(a,b) {
     if (isNaN(parseFloat(a)) != true) {
         if (isNaN(parseFloat(b)) != true) {
-            outcome = isInteger(parseFloat(a)) + isInteger(parseFloat(b));
+            sum = isInteger(parseFloat(a)) + isInteger(parseFloat(b));
+            outcome = a + ' + ' + b + ' = ' + sum;
         } else {
             outcome ='"' + b + '" is not a number';
         }
@@ -124,4 +132,4 @@ function sumB(a,b) {
 var sumNum7 = prompt('Write the 1st number');
 var sumNum8 = prompt('Write the 2nd number');
 var sumFunction4 = sumB(sumNum7,sumNum8);
-console.log(Math.round(sumNum7) + ' + ' + Math.round(sumNum8) + ' = ' + sumFunction4);
+console.log(sumFunction4);
