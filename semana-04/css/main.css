@@ -79,8 +79,10 @@ form {
     margin-left: 10%;
 }
 .shortcuts-list {
-    text-align: center;
+    width: 60%;
+    text-align: left;
     margin-top: 20px;
+    
 }
 
 /* ID's */
@@ -96,9 +98,8 @@ form {
     background-size: cover;
 }
 #homepage-img {
-    width: 45%;
-    max-width: 300px;
-    height: 45%;
+    width: 300px;
+    height: 400px;
 }
 #im-trackgenix {
     display: flex;
@@ -147,8 +148,7 @@ form {
         width: 35%;
     }
     .shortcuts-list {
-        display: inline-block;
-        text-align: left;
+        width: 30%;
     }
     .about-us-item-p {
         width: 70%;
