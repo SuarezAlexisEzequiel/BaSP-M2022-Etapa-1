@@ -118,7 +118,7 @@ function sumB(a,b) {
     if (isNaN(parseFloat(a)) != true) {
         if (isNaN(parseFloat(b)) != true) {
             sum = isInteger(parseFloat(a)) + isInteger(parseFloat(b));
-            outcome = a + ' + ' + b + ' = ' + sum;
+            outcome = Math.round(a) + ' + ' + Math.round(b) + ' = ' + sum;
         } else {
             outcome ='"' + b + '" is not a number';
         }
