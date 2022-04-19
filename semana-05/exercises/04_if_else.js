@@ -23,7 +23,7 @@ entre 13 y 19 años, “Joven” entre 20 y 30 años, “Adulto” entre 31 y 60
 “Anciano” si es mayor a 75 años. */
 
 console.log('\n-Exercise 4.b');
-var Age = 27;
+var Age = prompt('Write your age');
 console.log('Age: ' + Age);
 if ( Age < 2 ) {
     window.alert('Bebe');
