@@ -21,10 +21,10 @@ function sumB(a,b) {
         if (isNaN(parseFloat(b)) != true) {
             outcome = a + b;
         } else {
-            outcome ='"' + b + '" it is not a number (' + parseFloat(b) + ')';
+            outcome ='"' + b + '" is not a number (' + parseFloat(b) + ')';
         }
     } else if (typeof b == 'number') {
-        outcome ='"' + a + '" it is not a number (' + parseFloat(a) + ')';
+        outcome ='"' + a + '" is not a number (' + parseFloat(a) + ')';
     } else {
         outcome ='"' + a + '" and "' + b + '" are not a numbers (' + parseFloat(a) + ',' + parseFloat(b) + ')';
     }
@@ -63,26 +63,26 @@ function sumD(a,b) {
                 if (b % 1 === 0) {
                     outcome = a + b;
                 } else {
-                    window.alert(b + ' It is not a integer. So it was rounded to ' + Math.round(b));
-                    console.log(b + ' It is not a integer. So it was rounded to ' + Math.round(b));
+                    window.alert(b + ' is not an integer. So it was rounded to ' + Math.round(b));
+                    console.log(b + ' is not an integer. So it was rounded to ' + Math.round(b));
                     outcome = a + Math.round(b);
                 }
             } else if (b % 1 === 0) {
-                window.alert(a + ' It is not a integer. So it was rounded to ' + Math.round(a));
-                console.log(a + ' It is not a integer. So it was rounded to ' + Math.round(a));
+                window.alert(a + ' is not an integer. So it was rounded to ' + Math.round(a));
+                console.log(a + ' is not an integer. So it was rounded to ' + Math.round(a));
                 outcome = Math.round(a) + b;
             } else {
-                window.alert(a + ' and ' + b + ' They are not integer. So they was rounded to '
+                window.alert(a + ' and ' + b + ' are not integer. So they was rounded to '
                 + Math.round(a) + ' and ' + Math.round(b));
-                console.log(a + ' and ' + b + ' They are not integer. So they was rounded to '
+                console.log(a + ' and ' + b + ' are not integer. So they was rounded to '
                 + Math.round(a) + ' and ' + Math.round(b));
                 outcome = Math.round(a) + Math.round(b);
             }
         } else {
-            outcome ='"' + b + '" it is not a number';
+            outcome ='"' + b + '" is not a number';
         }
     } else if (isNaN(parseFloat(b)) != true) {
-        outcome ='"' + a + '" it is not a number';
+        outcome ='"' + a + '" is not a number';
     } else {
         outcome ='"' + a + '" and "' + b + '" are not a numbers';
     }
@@ -101,8 +101,8 @@ function isInteger(a) {
     if (a % 1 === 0) {
         outcome = a;
     } else {
-        window.alert(a + ' It is not a integer. So it was rounded to ' + Math.round(a));
-        console.log(a + ' It is not a integer. So it was rounded to ' + Math.round(a));
+        window.alert(a + ' is not a integer. So it was rounded to ' + Math.round(a));
+        console.log(a + ' is not a integer. So it was rounded to ' + Math.round(a));
         outcome = Math.round(a);
     }
     return outcome;
@@ -112,10 +112,10 @@ function sumB(a,b) {
         if (isNaN(parseFloat(b)) != true) {
             outcome = isInteger(parseFloat(a)) + isInteger(parseFloat(b));
         } else {
-            outcome ="'" + b + "' it's not a number";
+            outcome ='"' + b + '" is not a number';
         }
     } else if (isNaN(parseFloat(b)) != true) {
-        outcome ="'" + a + "' it's not a number"
+        outcome ='"' + a + '" is not a number';
     } else {
         outcome ='"' + a + '" and "' + b + '" are not a numbers';
     }
