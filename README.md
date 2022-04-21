@@ -9,7 +9,7 @@ Open index.html with your browser
 
 or
 
-Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-06/landing.html)
+Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-06/views/landing.html)
 
 and
 
