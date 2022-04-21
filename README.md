@@ -9,7 +9,7 @@ Open index.html with your browser
 
 or
 
-Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-04/index.html)
+Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-06/index.html)
 
 and
 
@@ -68,5 +68,17 @@ In week 05 we get practice with exercises of JS. New .js files were created:
 These exercises contain the most basic and essential material for js 
 ```
 
+### Week 06
+```
+In week 06 we add LogIn and SignUp screens to the proyect. And we create the following files:
+- login.html
+- login.css
+- login.js
+- sign-up.html
+- sign-up.css
+- sign-up.js
+
+Usin the JS files, we get Trackgenix more interactive with javascript.
+```
 
 > Alexis Ezequiel Suarez, member of the Trackgenix development team.
