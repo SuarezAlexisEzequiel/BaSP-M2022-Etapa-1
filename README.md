@@ -5,7 +5,7 @@ of each of its members. And so also a control of the progress and viability of t
 
 ## How to initiate Trackgenix landing page:
 
-Open index.html with your browser
+Open landing.html with your browser
 
 or
 

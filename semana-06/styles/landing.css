@@ -93,7 +93,7 @@ form {
     align-items: center;
     height: 85vh;
     margin-bottom: 0px;
-    background-image: url("../img/background-img.jpg");
+    background-image: url("../assets/background-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

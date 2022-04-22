@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 31px 0px 104px 0px;
+    box-sizing: content-box;
+    border-top: 60px solid #49a37b;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+form > div {
+    width: 40%;
+    margin: 15px 0px 15px 0px;
+}
+h1 {
+    color: #373867;
+    margin-bottom: 50px;
+}
+label {
+    font-size: 24px;
+}

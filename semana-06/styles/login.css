@@ -1,0 +1,12 @@
+main {
+    display: block;
+    margin: 31px 0px 104px 0px;
+    box-sizing: content-box;
+    border-top: 60px solid #49a37b;
+}
+form {
+    width: 80%;
+    max-width: 276px;
+    height: 562px;
+    margin: 15px 0px 15px 10%;
+}

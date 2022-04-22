@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/login.css">
     <script src="../javascript/login.js"></script>
@@ -18,8 +19,30 @@
         <img id="logo-icon" src="../assets/logo.png" alt="Small logo of a shield with a watch inside">
         <a href="./sign-up.html">Sign Up</a>
     </header>
+    <aside>
+        <nav>
+            <div>Shortcuts</div>
+            <ul>
+                <li>
+                    <a href="./landing.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
     <main>
-
+        <form action="">
+            <div class="login-email-valid login-email-invalid">
+                <label for="login-email">Email</label>
+                <input type="email" name="login-email" id="login-email" placeholder="Click on me to write">
+            </div>
+            <div class="login-pwd-valid login-pwd-invalid">
+                <label for="login-pwd">Password</label>
+                <input type="password" name="login-pwd" id="login-pwd" placeholder="Click on me to write">
+            </div>
+        </form>
     </main>
     <footer>
         <div>
