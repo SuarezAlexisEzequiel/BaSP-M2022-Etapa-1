@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../styles/sidebar.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/login.css">
-    <script src="../javascript/login.js"></script>
 </head>
 <body>
     <header>
@@ -34,16 +33,16 @@
     </aside>
     <main>
         <h1>Log In</h1>
-        <form id="login-form" action="">
-            <div class="login-form-box">
-                <label class="valid" for="login-email">Email</label>
-                <input class="valid" type="email" name="login-email" id="login-email" placeholder="Click on me to write">
-                <span class="valid">This is not an email</span>
+        <form id="login-form" action="../javascript/login.js">
+            <div class="normal">
+                <label class="normal-e" for="email">Email</label>
+                <input class="normal-e" type="text" name="login-email" id="login-email" placeholder="Click on me to write">
+                <span class="normal-e">This is not an email</span>
             </div>
-            <div class="login-form-box">
-                <label class="valid" for="login-pwd">Password</label>
-                <input class="valid" type="password" name="login-pwd" id="login-pwd" placeholder="Click on me to write">
-                <span class="valid">Incorrect password</span>
+            <div class="normal">
+                <label class="normal-p" for="login-pwd">Password</label>
+                <input class="normal-p" type="password" name="login-pwd" id="login-pwd" placeholder="Click on me to write">
+                <span class="normal-p">Incorrect password</span>
             </div>
             <input class="submit" id="login-submit" type="submit" name="login-submit" value="LOGIN">
         </form>
@@ -69,5 +68,6 @@
         <p>Rosario, Argentina</p>
         <p>Copyright © 2022 Trackgenix S.A. All rights reserved.</p>
     </footer>
+    <script src="../javascript/login.js"></script>
 </body>
 </html>
