@@ -38,49 +38,79 @@
             <div class="sign-up-column">
                 <div class="normal">
                     <label for="signup-name">Name</label>
-                    <input type="text" name="signup-name" id="signup-name" placeholder="Click on me to write">
-                    <span></span>
+                    <input class="normal" type="text" name="signup-name" id="signup-name" placeholder="Click on me to write">
+                    <span>Must have more than 3 characters. Only text.</span>
                 </div>
                 <div class="normal">
                     <label for="signup-lastname">Last Name</label>
-                    <input type="text" name="signup-lastname" id="signup-lastname" placeholder="Click on me to write">
+                    <input class="normal" type="text" name="signup-lastname" id="signup-lastname" placeholder="Click on me to write">
+                    <span>Must have more than 3 characters. Only text.</span>
                 </div>
-                <div class="sign-up-form-field sign-up-dni-valid signup-dni-invalid">
+                <div class="normal">
                     <label for="signup-dni">DNI</label>
-                    <input type="text" name="signup-dni" id="signup-dni" placeholder="Click on me to write">
+                    <input class="normal" type="text" name="signup-dni" id="signup-dni" placeholder="Click on me to write">
+                    <span>Must have more than 7 characters. Only numbers.</span>
                 </div>
-                <div class="sign-up-form-field sign-up-birthday-valid signup-birthday-invalid">
+                <div class="normal">
                     <label for="signup-birthday">Birthday date</label>
-                    <input type="date" name="signup-birthday" id="signup-birthday" placeholder="Click on me to write">
+                    <input class="normal" type="date" name="signup-birthday" id="signup-birthday" placeholder="Click on me to write">
+                    <span>Must have DD/MM/YYYY format.</span>
                 </div>
-                <div class="sign-up-form-field sign-up-phnum-valid signup-phnum-invalid">
+                <div class="normal">
                     <label for="signup-phnum">Phonenumber</label>
-                    <input type="text" name="signup-phnum" id="signup-phnum" placeholder="Click on me to write">
+                    <input class="normal" type="text" name="signup-phnum" id="signup-phnum" placeholder="Click on me to write">
+                    <span>Must have 10 characters. Only numbers. Without area code.</span>
                 </div>
             </div>
             <div class="sign-up-column">
-                <div class="sign-up-form-field sign-up-hometown-valid signup-hometown-invalid">
+                <div class="normal">
+                    <label for="signup-address">Address</label>
+                    <input class="normal" type="text" name="signup-address" id="signup-address" placeholder="Click on me to write">
+                    <span>At least 5 characters. It has to have letters,
+                        numbers and a space in between. </span>
+                </div>
+                <div class="normal">
+                    <label for="signup-phnum">Phonenumber</label>
+                    <input class="normal" type="text" name="signup-phnum" id="signup-phnum" placeholder="Click on me to write">
+                    <span>Must have 10 characters. Only numbers. Without area code.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-address">Address</label>
+                    <input class="normal" type="text" name="signup-address" id="signup-address" placeholder="Click on me to write">
+                    <span>At least 5 characters. It has to have letters,
+                        numbers and a space in between. </span>
+                </div>
+                <div class="normal">
                     <label for="signup-hometown">Hometown</label>
-                    <input type="text" name="signup-hometown" id="signup-hometown" placeholder="Click on me to write">
+                    <input class="normal" type="text" name="signup-hometown" id="signup-hometown" placeholder="Click on me to write">
+                    <span> Can be have letters and numbers. Must have more than 3 characters.</span>
                 </div>
-                <div class="sign-up-form-field sign-up-poscode-valid signup-poscode-invalid">
+                <div class="normal">
                     <label for="signup-poscode">Postal code</label>
-                    <input type="text" name="signup-poscode" id="signup-poscode" placeholder="Click on me to write">
-                </div>
-                <div class="sign-up-form-field sign-up-email-valid signup-email-invalid">
-                    <label for="signup-email">Email</label>
-                    <input type="text" name="signup-email" id="signup-email" placeholder="Click on me to write">
-                </div>
-                <div class="sign-up-form-field sign-up-pwd-valid signup-pwd-invalid">
-                    <label for="signup-pwd">Password</label>
-                    <input type="password" name="signup-pwd" id="signup-pwd" placeholder="Click on me to write">
-                </div>
-                <div class="sign-up-form-field sign-up-rpwd-valid signup-rpwd-invalid">
-                    <label for="signup-rpwd">Repeat Password</label>
-                    <input type="password" name="signup-rpwd" id="signup-rpwd" placeholder="Click on me to write">
+                    <input class="normal" type="text" name="signup-poscode" id="signup-poscode" placeholder="Click on me to write">
+                    <span>Only number and must have between 4 and 5 numbers.</span>
                 </div>
             </div>
-            <input class="submit" id="sign-up-submit" type="submit" name="sign-up-submit" value="Create account">
+            <div class="sign-up-column">
+                <div class="normal">
+                    <label for="signup-email">Email</label>
+                    <input class="normal" type="text" name="signup-email" id="signup-email" placeholder="Click on me to write">
+                    <span>Invalid email format.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-pwd">Password</label>
+                    <input class="normal" type="password" name="signup-pwd" id="signup-pwd" placeholder="Click on me to write">
+                    <span>At least 8 characters, made up of letters and numbers.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-rpwd">Repeat Password</label>
+                    <input class="normal" type="password" name="signup-rpwd" id="signup-rpwd" placeholder="Click on me to write">
+                    <span>Passwords do not match</span>
+                </div>
+                <div>
+                    <input class="submit" id="sign-up-submit" type="submit" name="signup-submit" value="CREATE NEW ACCOUNT">
+                </div>
+            </div>
         </form>
     </main>
     <footer>
@@ -104,5 +134,6 @@
         <p>Rosario, Argentina</p>
         <p>Copyright © 2022 Trackgenix S.A. All rights reserved.</p>
     </footer>
+    <script src="../javascript/sign-up.js"></script>
 </body>
 </html>

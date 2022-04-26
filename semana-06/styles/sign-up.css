@@ -2,7 +2,7 @@
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 31px 0px 104px 0px;
     box-sizing: content-box;
@@ -13,8 +13,8 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    width: 80%;
+    align-items: flex-start;
+    width: 95%;
 }
 h1 {
     color: #373867;
@@ -25,23 +25,32 @@ label {
     font-size: 24px;
 }
 span {
+    visibility: hidden;
+    font-style: italic;
+    font-size: 12px;
     margin: 5px 0px 30px 0px;
 }
-span.invalid {
+div.valid > input, div.valid > span{
+    color: #aace9b;
+    border-color: #49a37b
+}
+div.invalid > input, div.invalid > span {
     visibility: visible;
-    font-style: italic;
-    font-size: 10px;
+    color: red;
+    border-color: red;
 }
 /* CLASSES */
 .sign-up-column {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
     margin: 0px 0px 15px 0px;
 }
 .sign-up-form-field {
     padding: 15px 0 15px 0px;
 }
-
-.invalid {
-    color: red;
-    border-color: red;
-}
+/* ID */
+/* #sign-up-submit {
+    margin-bottom: 30px;
+} */

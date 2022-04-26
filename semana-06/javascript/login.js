@@ -2,19 +2,20 @@
 var btnSubmit = document.getElementById('login-submit');
 var inputEmail = document.getElementById('login-email');
 var inputPassword = document.getElementById('login-pwd');
-var elementsEmail = document.getElementsByClassName('normal-e');
-var elementsPwd = document.getElementsByClassName('normal-p');
 
+// Var
 var emailFormat = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 var emailValidateRes;
 var pwdValidateRes;
 
+// Listener
 btnSubmit.addEventListener('click', validateLoginInfo);
 inputEmail.addEventListener('blur', validateEmail);
 inputEmail.addEventListener('focus', inFocusEmail);
 inputPassword.addEventListener('blur', validatePassword);
 inputPassword.addEventListener('focus', inFocusPwd);
 
+// Functions
 function validateEmail (e) {
     var containerE = e.target.parentElement;
     if (emailFormat.test(e.target.value) == true) {
@@ -55,11 +56,11 @@ function inFocusEmail(x) {
     var containerFE = x.target.parentElement;
     containerFE.className = 'normal';
 }
+
 function inFocusPwd(y) {
     var containerFP = y.target.parentElement;
     containerFP.className = 'normal';
 }
-
 
 function validateLoginInfo (e) {
     e.preventDefault();
