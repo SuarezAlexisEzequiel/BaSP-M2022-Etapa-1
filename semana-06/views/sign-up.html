@@ -35,48 +35,51 @@
     <main>
         <h1>Create a new account</h1>
         <form action="">
-            <div class="signup-name-valid signup-name-invalid">
-                <label for="signup-name">Name</label>
-                <input type="text" name="signup-name" id="signup-name" placeholder="Click on me to write">
-                <p>Invalid name. They must be more than 3 characters, and not include numbers or symbols.</p>
+            <div class="sign-up-column">
+                <div class="sign-up-form-field sign-up-name-valid signup-name-invalid">
+                    <label for="signup-name">Name</label>
+                    <input type="text" name="signup-name" id="signup-name" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-lastname-valid signup-lastname-invalid">
+                    <label for="signup-lastname">Last Name</label>
+                    <input type="text" name="signup-lastname" id="signup-lastname" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-dni-valid signup-dni-invalid">
+                    <label for="signup-dni">DNI</label>
+                    <input type="number" name="signup-dni" id="signup-dni" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-birthday-valid signup-birthday-invalid">
+                    <label for="signup-birthday">Birthday date</label>
+                    <input type="date" name="signup-birthday" id="signup-birthday" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-phnum-valid signup-phnum-invalid">
+                    <label for="signup-phnum">Phonenumber</label>
+                    <input type="number" name="signup-phnum" id="signup-phnum" placeholder="Click on me to write">
+                </div>
             </div>
-            <div class="signup-lastname-valid signup-lastname-invalid">
-                <label for="signup-lastname">Last Name</label>
-                <input type="text" name="signup-lastname" id="signup-lastname" placeholder="Click on me to write">
-                <p>Invalid last-name. They must be more than 3 characters, and not include numbers or symbols.</p>
+            <div class="sign-up-column">
+                <div class="sign-up-form-field sign-up-hometown-valid signup-hometown-invalid">
+                    <label for="signup-hometown">Hometown</label>
+                    <input type="text" name="signup-hometown" id="signup-hometown" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-poscode-valid signup-poscode-invalid">
+                    <label for="signup-poscode">Postal code</label>
+                    <input type="number" name="signup-poscode" id="signup-poscode" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-email-valid signup-email-invalid">
+                    <label for="signup-email">Email</label>
+                    <input type="email" name="signup-email" id="signup-email" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-pwd-valid signup-pwd-invalid">
+                    <label for="signup-pwd">Password</label>
+                    <input type="password" name="signup-pwd" id="signup-pwd" placeholder="Click on me to write">
+                </div>
+                <div class="sign-up-form-field sign-up-rpwd-valid signup-rpwd-invalid">
+                    <label for="signup-rpwd">Repeat Password</label>
+                    <input type="password" name="signup-rpwd" id="signup-rpwd" placeholder="Click on me to write">
+                </div>
             </div>
-            <div class="signup-dni-valid signup-dni-invalid">
-                <label for="signup-dni">DNI</label>
-                <input type="number" name="signup-dni" id="signup-dni" placeholder="Click on me to write">
-            </div>
-            <div class="signup-birthday-valid signup-birthday-invalid">
-                <label for="signup-birthday">Birthday date</label>
-                <input type="date" name="signup-birthday" id="signup-birthday" placeholder="Click on me to write">
-            </div>
-            <div class="signup-phnum-valid signup-phnum-invalid">
-                <label for="signup-phnum">Phonenumber</label>
-                <input type="number" name="signup-phnum" id="signup-phnum" placeholder="Click on me to write">
-            </div>
-            <div class="signup-hometown-valid signup-hometown-invalid">
-                <label for="signup-hometown">Hometown</label>
-                <input type="text" name="signup-hometown" id="signup-hometown" placeholder="Click on me to write">
-            </div>
-            <div class="signup-poscode-valid signup-poscode-invalid">
-                <label for="signup-poscode">Postal code</label>
-                <input type="number" name="signup-poscode" id="signup-poscode" placeholder="Click on me to write">
-            </div>
-            <div class="signup-email-valid signup-email-invalid">
-                <label for="signup-email">Email</label>
-                <input type="email" name="signup-email" id="signup-email" placeholder="Click on me to write">
-            </div>
-            <div class="signup-pwd-valid signup-pwd-invalid">
-                <label for="signup-pwd">Password</label>
-                <input type="password" name="signup-pwd" id="signup-pwd" placeholder="Click on me to write">
-            </div>
-            <div class="signup-rpwd-valid signup-rpwd-invalid">
-                <label for="signup-rpwd">Repeat Password</label>
-                <input type="password" name="signup-rpwd" id="signup-rpwd" placeholder="Click on me to write">
-            </div>
+            <input class="submit" id="sign-up-submit" type="submit" name="sign-up-submit" value="Create account">
         </form>
     </main>
     <footer>

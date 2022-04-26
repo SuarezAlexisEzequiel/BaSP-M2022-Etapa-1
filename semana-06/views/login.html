@@ -33,15 +33,19 @@
         </nav>
     </aside>
     <main>
-        <form action="">
-            <div class="login-email-valid login-email-invalid">
-                <label for="login-email">Email</label>
-                <input type="email" name="login-email" id="login-email" placeholder="Click on me to write">
+        <h1>Log In</h1>
+        <form id="login-form" action="">
+            <div class="login-form-box">
+                <label class="valid" for="login-email">Email</label>
+                <input class="valid" type="email" name="login-email" id="login-email" placeholder="Click on me to write">
+                <span class="valid">This is not an email</span>
             </div>
-            <div class="login-pwd-valid login-pwd-invalid">
-                <label for="login-pwd">Password</label>
-                <input type="password" name="login-pwd" id="login-pwd" placeholder="Click on me to write">
+            <div class="login-form-box">
+                <label class="valid" for="login-pwd">Password</label>
+                <input class="valid" type="password" name="login-pwd" id="login-pwd" placeholder="Click on me to write">
+                <span class="valid">Incorrect password</span>
             </div>
+            <input class="submit" id="login-submit" type="submit" name="login-submit" value="LOGIN">
         </form>
     </main>
     <footer>
