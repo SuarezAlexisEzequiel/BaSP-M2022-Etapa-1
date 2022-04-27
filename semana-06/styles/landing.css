@@ -11,7 +11,21 @@ form {
     height: 562px;
     margin: 15px 0px 15px 10%;
 }
-
+form span {
+    visibility: hidden;
+    font-style: italic;
+    font-size: 12px;
+    margin: 5px 0px 5px 0px;
+}
+div.valid > input, div.valid > span{
+    color: #aace9b;
+    border-color: #49a37b
+}
+div.invalid > input, div.invalid > span {
+    visibility: visible;
+    color: red;
+    border-color: red;
+}
 /* Classes */
 .im-trackgenix-item-p {
     display: inline-block;

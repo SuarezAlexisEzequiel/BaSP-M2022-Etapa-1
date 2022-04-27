@@ -22,8 +22,9 @@ var addressSignUpValidateRes;
 var hometownSignUpValidateRes;
 var poscodeSignUpValidateRes;
 var emailSignUpValidateRes;
-var emaiSignUplFormatSU = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+var emailSignUpFormat = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 var pwdSignUpValidateRes;
+var pwdValue;
 var rpwdSignUpValidateRes;
 
 // Listener
@@ -55,58 +56,66 @@ inputSignUpRPassword.addEventListener('focus', signUpFocus);
 
 function validateName(e) {
     var containerName = e.target.parentElement;
-    if (e.target.value.length > 3 && isNaN(e) == true) {
-        nameValidateRes = 'Cool name';
+    if (e.target.value.length > 3 && isNaN(e.target) == true) {
+        nameSignUpValidateRes = 'Cool name';
         e.target.className = 'valid';
-        containerName = 'valid';
+        containerName.className = 'valid';
     } else {
-        nameValidateRes = 'Sorry I dont think that is a name';
+        nameSignUpValidateRes = 'Sorry I dont think that is a name';
         e.target.className = 'invalid';
-        containerName = 'invalid';
+        containerName.className = 'invalid';
     }
 }
 
 function validateLName(e) {
     var containerLName = e.target.parentElement;
-    if (e.target.value.length > 3 && isNaN(e.target) == true) {
-        lNameValidateRes = 'That lastname rocks';
+    if (e.target.value.length > 3 && isNaN(e.target.value) == true) {
+        lNameSignUpValidateRes = 'That lastname rocks';
         e.target.className = 'valid';
-        containerLName = 'valid';
+        containerLName.className = 'valid';
     } else {
-        lNameValidateRes = 'Must have more than 3 characters. Only Text'
+        lNameSignUpValidateRes = 'Must have more than 3 characters. Only Text'
         e.target.className = 'invalid';
-        containerLName = 'invalid';
+        containerLName.className = 'invalid';
     }
 }
 
 function validateDni(e) {
     var containerDni = e.target.parentElement;
-    if (e.target.value.length >= 7 && isNaN(e.target) == false) {
-        dniValidateRes = 'Correct';
+    if (e.target.value.length >= 7 && isNaN(e.target.value) == false) {
+        dniSignUpValidateRes = 'Correct';
         e.target.className = 'valid';
-        containerDni = 'valid';
+        containerDni.className = 'valid';
     } else {
-        dniValidateRes = 'Incorrect';
+        dniSignUpValidateRes = 'Incorrect';
         e.target.className = 'invalid';
-        containerDni = 'invalid';
+        containerDni.className = 'invalid';
     }
 }
-// TODAVIA HAY QUE VALIDARLO A ESTE
+
 function validateBirthDate(e) {
-    var containerBirth = e.target.parentElement;
-    
+    var containerBirthdayDate = e.target.parentElement;
+    if (Date.parse(e.target.value) > Date.now() ) {
+        birthdaySignUpValidateRes = 'Invalid date';
+        e.target.className = 'invalid';
+        containerBirthdayDate.className = 'invalid';
+    } else {
+        birthdaySignUpValidateRes = 'Correct';
+        e.target.className = 'valid';
+        containerBirthdayDate.className = 'valid';
+    }
 }
 
 function validatePhNumb(e) {
     var containerPhNum = e.target.parentElement;
-    if (e.target.value.length = 10 && isNaN(e.target) == false) {
-        phNumValidateRes = 'Correct';
+    if (e.target.value.length = 10 && isNaN(e.target.value) == false) {
+        phNumSignUpValidateRes = 'Correct';
         e.target.className = 'valid';
-        containerPhNum = 'valid';
+        containerPhNum.className = 'valid';
     } else {
-        phNumValidateRes = 'Incorrect';
+        phNumSignUpValidateRes = 'Incorrect';
         e.target.className = 'invalid';
-        containerPhNum = 'invalid';
+        containerPhNum.className = 'invalid';
     }
 }
 // LE FALTA EL ESPACIO A ADDRESS
@@ -122,13 +131,13 @@ function validateAddress(e) {
             char++;
         }
     }
-    var containerPwd = e.target.parentElement;
+    var containerAddress = e.target.parentElement;
     if (e.target.value.length >= 5 && num >= 1 && char >= 1) {
-        addressValidateRes = 'Correct';
+        addressSignUpValidateRes = 'Correct';
         e.target.className = 'valid';
         containerAddress.className = 'valid';
     } else {
-        addressValidateRes = 'Incorrect';
+        addressSignUpValidateRes = 'Incorrect';
         e.target.className = 'invalid';
         containerAddress.className = 'invalid';
     }
@@ -136,23 +145,12 @@ function validateAddress(e) {
 
 function validateHometown(e) {
     var containerHometown = e.target.parentElement;
-    var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    var num = 0;
-    var char = 0;
-    for (i = 0; i < e.target.value.length; i++) {
-        if (numbers.includes(e.target.value[i])) {
-            num++;
-        } else {
-            char++;
-        }
-    }
-    var containerPwd = e.target.parentElement;
-    if (e.target.value.length >= 3 && num >= 1 && char >= 1) {
-        hometownValidateRes = 'Correct';
+    if (e.target.value.length >= 3) {
+        hometownSignUpValidateRes = 'Correct';
         e.target.className = 'valid';
         containerHometown.className = 'valid';
     } else {
-        hometownValidateRes = 'Incorrect';
+        hometownSignUpValidateRes = 'Incorrect';
         e.target.className = 'invalid';
         containerHometown.className = 'invalid';
     }
@@ -160,26 +158,26 @@ function validateHometown(e) {
 
 function validatePosCode(e) {
     var containerPosCode = e.target.parentElement;
-    if (e >= 4 && e <= 5 && isNaN(e) == false) {
-        poscodeValidateRes = 'Correct';
+    if (e.target.value.lenght >= 4 && e.target.value.lenght <= 5 && isNaN(e.target.value) == false) {
+        poscodeSignUpValidateRes = 'Correct';
         e.target.className = 'valid';
-        containerPosCode = 'valid';
+        containerPosCode.className = 'valid';
     } else {
-        poscodeValidateRes = 'Incorrect';
+        poscodeSignUpValidateRes = 'Incorrect';
         e.target.className = 'invalid';
-        containerPosCode = 'invalid';
+        containerPosCode.className = 'invalid';
     }
     
 }
 
 function validateSignUpEmail (e) {
     var containerEm = e.target.parentElement;
-    if (emailFormatSU.test(e.target.value) == true) {
-        emailValidateRes = 'Correct';
+    if (emailSignUpFormat.test(e.target.value) == true) {
+        emailSignUpValidateRes = 'Correct';
         e.target.className = 'valid';
         containerEm.className = 'valid';
     } else {
-        emailValidateRes = 'Incorrect';
+        emailSignUpValidateRes = 'Incorrect';
         e.target.className = 'invalid';
         containerEm.className = 'invalid';
     }
@@ -201,6 +199,7 @@ function validateSignUpPwd (e) {
         pwdSignUpValidateRes = 'Correct';
         e.target.className = 'valid';
         containerPwd.className = 'valid';
+        pwdValue = e.target.value;
     } else {
         pwdSignUpValidateRes = 'Incorrect';
         e.target.className = 'invalid';
@@ -208,16 +207,16 @@ function validateSignUpPwd (e) {
     }
 }
 
-function validateRPwd(a, b) {
+function validateRPwd(e) {
     containerRPwd = e.target.parentElement;
-    if (e.target.value == inputSignUpPassword) {
-        inputSignUpRPassword = 'Passwords match';
+    if (e.target.value == pwdValue) {
+        rpwdSignUpValidateRes = 'Passwords match';
         e.target.className = 'valid';
-        containerRPwd = 'valid';
+        containerRPwd.className = 'valid';
     } else {
-        inputSignUpRPassword = 'Passwords do not match';
+        rpwdSignUpValidateRes = 'Passwords do not match';
         e.target.className = 'invalid';
-        containerRPwd = 'invalid';
+        containerRPwd.className = 'invalid';
     }
 }
 
@@ -229,29 +228,29 @@ function signUpFocus(e) {
 function validateSignUpInfo (e) {
     e.preventDefault();
     window.alert(
-        ' Name: ' + emailValidateRes +
-        '\n Lastname: ' + emailValidateRes +
-        '\n DNI: ' + emailValidateRes +
-        '\n Birthday Date: ' + emailValidateRes +
-        '\n Phone Number: ' + emailValidateRes +
-        '\n Address: ' + emailValidateRes +
-        '\n Hometown: ' + emailValidateRes +
-        '\n Postal Code: ' + emailValidateRes +
-        '\n Email: ' + emailValidateRes +
-        '\n Password: ' + pwdValidateRes +
-        '\n Repeat Password: ' + pwdValidateRes
+        ' Name: ' + nameSignUpValidateRes +
+        '\n Lastname: ' + lNameSignUpValidateRes +
+        '\n DNI: ' + dniSignUpValidateRes +
+        '\n Birthday Date: ' + birthdaySignUpValidateRes +
+        '\n Phone Number: ' + phNumSignUpValidateRes +
+        '\n Address: ' + addressSignUpValidateRes +
+        '\n Hometown: ' + hometownSignUpValidateRes +
+        '\n Postal Code: ' + poscodeSignUpValidateRes +
+        '\n Email: ' + emailSignUpValidateRes +
+        '\n Password: ' + pwdSignUpValidateRes +
+        '\n Repeat Password: ' + rpwdSignUpValidateRes
     );
     console.log(
-        ' Name: ' + emailValidateRes +
-        '\n Lastname: ' + emailValidateRes +
-        '\n DNI: ' + emailValidateRes +
-        '\n Birthday Date: ' + emailValidateRes +
-        '\n Phone Number: ' + emailValidateRes +
-        '\n Address: ' + emailValidateRes +
-        '\n Hometown: ' + emailValidateRes +
-        '\n Postal Code: ' + emailValidateRes +
-        '\n Email: ' + emailValidateRes +
-        '\n Password: ' + pwdValidateRes +
-        '\n Repeat Password: ' + pwdValidateRes
+        ' Name: ' + nameSignUpValidateRes +
+        '\n Lastname: ' + lNameSignUpValidateRes +
+        '\n DNI: ' + dniSignUpValidateRes +
+        '\n Birthday Date: ' + birthdaySignUpValidateRes +
+        '\n Phone Number: ' + phNumSignUpValidateRes +
+        '\n Address: ' + addressSignUpValidateRes +
+        '\n Hometown: ' + hometownSignUpValidateRes +
+        '\n Postal Code: ' + poscodeSignUpValidateRes +
+        '\n Email: ' + emailSignUpValidateRes +
+        '\n Password: ' + pwdSignUpValidateRes +
+        '\n Repeat Password: ' + rpwdSignUpValidateRes
     );    
 }

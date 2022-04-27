@@ -168,28 +168,34 @@
                 <div class="flex-container-contact-us">
                     <form action="">
                         <div>
-                            <label for="form-name">Username</label>
-                            <input type="text" name="user-name" id="form-name" placeholder="Click on me to write">
+                            <label for="form-name">Name</label>
+                            <input class="normal" type="text" name="user-name" id="form-name" placeholder="Click on me to write">
+                            <span class="normal">Must have more than 3 characters. Only text.</span>
                         </div>
                         <div>
                             <label for="form-email">Email</label>
-                            <input type="email" name="user-email" id="form-email" placeholder="Click on me to write">
+                            <input class='normal' type="text" name="user-email" id="form-email" placeholder="Click on me to write">
+                            <span class="normal">Invalid email format.</span>
                         </div>
                         <div>
                             <label for="form-sector">Sector</label>
-                            <select name="sector" id="form-sector">
+                            <select class='normal' name="sector" id="form-sector">
+                                <option value="-">-</option>
                                 <option value="rrhh">RR.HH.</option>
                                 <option value="systems">SYSTEMS</option>
                                 <option value="commercialization">COMMERCIALIZATION</option>
                             </select>
+                            <span class="normal">You must to choose one option.</span>
                         </div>
                         <div>
                             <label for="form-phone-number">Phone number (Optional)</label>
-                            <input type="number" name="f-ph-num" id="form-phone" placeholder="Click on me to write">
+                            <input class="normal" type="text" name="f-ph-num" id="form-phone" placeholder="Click on me to write">
+                            <span class="normal">Must have 10 characters. Only numbers. Without area code.</span>
                         </div>
                         <div>
                             <label for="form-type-a-message">Type a message</label>
-                            <textarea name="message" cols="30" rows="10" placeholder="Click on me to write"></textarea>
+                            <textarea class="normal" name="message" cols="30" rows="10" placeholder="Click on me to write"></textarea>
+                            <span class="normal">You have to type a message here.</span>
                         </div>
                         <input class="submit" id="landing-submit" type="submit" name="landing-submit" value="Submit">
                     </form>
