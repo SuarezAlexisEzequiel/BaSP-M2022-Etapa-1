@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 31px 0px 104px 0px;
+    box-sizing: content-box;
+    border-top: 60px solid #49a37b;
+}
+h1 {
+    color: #373867;
+}
+form {
+    width: 60%;
+    max-width: 500px;
+    height: 562px;
+    margin: 30px 0px 30px 0px;
+}
+span {
+    visibility: hidden;
+    font-style: italic;
+    font-size: 12px;
+    margin: 5px 0px 30px 0px;
+}
+div.valid > input, div.valid > span{
+    color: #aace9b;
+    border-color: #49a37b
+}
+div.invalid > input, div.invalid > span {
+    visibility: visible;
+    color: red;
+    border-color: red;
+}

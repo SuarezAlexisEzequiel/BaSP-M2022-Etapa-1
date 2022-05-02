@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackgenix - Log In</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <header>
+        <img id="burguer-icon" src="../assets/burguer-icon.jpg" alt="Three horizontal lines">
+        <img id="logo-icon" src="../assets/logo.png" alt="Small logo of a shield with a watch inside">
+        <a href="./sign-up.html">Sign Up</a>
+    </header>
+    <aside>
+        <nav>
+            <div>Shortcuts</div>
+            <ul>
+                <li>
+                    <a href="./landing.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>Log In</h1>
+        <form id="login-form" action="../javascript/login.js">
+            <div class="normal">
+                <label class="normal-e" for="email">Email</label>
+                <input class="normal-e" type="text" name="login-email" id="login-email" placeholder="Click on me to write">
+                <span class="normal-e">Invalid email format.</span>
+            </div>
+            <div class="normal">
+                <label class="normal-p" for="login-pwd">Password</label>
+                <input class="normal-p" type="password" name="login-pwd" id="login-pwd" placeholder="Click on me to write">
+                <span class="normal-p">Incorrect password.</span>
+            </div>
+            <input class="submit" id="login-submit" type="submit" name="login-submit" value="LOGIN">
+            <input type="button" value="Forgot password? Click here.">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="https://ar.linkedin.com/" target="_blank">
+                <img src="../assets/linkedin.svg" alt="linkedin-icon">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../assets/twitter.svg" alt="twitter-icon">
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="../assets/facebook.svg" alt="facebook-icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../assets/instagram.svg" alt="instagram-icon">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="../assets/githab.svg" alt="git-hub-icon">
+            </a>
+        </div>
+        <p>Rosario, Argentina</p>
+        <p>Copyright © 2022 Trackgenix S.A. All rights reserved.</p>
+    </footer>
+    <script src="../javascript/login.js"></script>
+</body>
+</html>

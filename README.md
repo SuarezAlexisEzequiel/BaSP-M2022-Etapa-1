@@ -9,7 +9,7 @@ Open landing.html with your browser
 
 or
 
-Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-06/views/landing.html)
+Click [here](https://suarezalexisezequiel.github.io/BaSP-M2022-Etapa-1/semana-07/views/landing.html)
 
 and
 
@@ -78,7 +78,12 @@ In week 06 we add LogIn and SignUp screens to the proyect. And we create the fol
 - sign-up.css
 - sign-up.js
 
-Usin the JS files, we get Trackgenix more interactive with javascript.
+Usin the JS files, we get Trackgenix more interactive with javascript. We gave interaction through validations to the input fields of the aforementioned screens
+```
+
+### Week 07
+```
+In week 07 we use an API to connect the validations developed last week on the frontend, to the backend that returns a confirmation of them. 
 ```
 
 > Alexis Ezequiel Suarez, member of the Trackgenix development team.

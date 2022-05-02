@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackgenix - Sign Up</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/sign-up.css">
+    <script src="../javascript/sign-up.js"></script>
+</head>
+<body>
+    <header>
+        <img id="burguer-icon" src="../assets/burguer-icon.jpg" alt="Three horizontal lines">
+        <img id="logo-icon" src="../assets/logo.png" alt="Small logo of a shield with a watch inside">
+        <a href="./sign-up.html">Sign Up</a>
+    </header>
+    <aside>
+        <nav>
+            <div>Shortcuts</div>
+            <ul>
+                <li>
+                    <a href="./landing.html">Homepage</a>
+                </li>
+                <li>
+                    <a href="./login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>Create a new account</h1>
+        <form action="">
+            <div class="sign-up-column">
+                <div class="normal">
+                    <label for="signup-name">Name</label>
+                    <input class="normal" type="text" name="signup-name" id="signup-name" placeholder="Click on me to write">
+                    <span class="normal">Must have more than 3 characters. Only text.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-lastname">Last Name</label>
+                    <input class="normal" type="text" name="signup-lastname" id="signup-lastname" placeholder="Click on me to write">
+                    <span class="normal">Must have more than 3 characters. Only text.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-dni">DNI</label>
+                    <input class="normal" type="text" name="signup-dni" id="signup-dni" placeholder="Click on me to write">
+                    <span class="normal">Must have more than 7 characters. Only numbers.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-birthday">Birthday date</label>
+                    <input class="normal" type="date" name="signup-birthday" id="signup-birthday" placeholder="DD/MM/YYYY">
+                    <span class="normal">Must have DD/MM/YYYY format. And be a valid Date.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-phnum">Phonenumber</label>
+                    <input class="normal" type="text" name="signup-phnum" id="signup-phnum" placeholder="Click on me to write">
+                    <span class="normal">Must have 10 characters. Only numbers. Without area code.</span>
+                </div>
+            </div>
+            <div class="sign-up-column">
+                <div class="normal">
+                    <label for="signup-address">Address</label>
+                    <input class="normal" type="text" name="signup-address" id="signup-address" placeholder="Click on me to write">
+                    <span class="normal">At least 5 characters. It has to have letters,
+                        numbers and a space in between. </span>
+                </div>
+                <div class="normal">
+                    <label for="signup-hometown">Hometown</label>
+                    <input class="normal" type="text" name="signup-hometown" id="signup-hometown" placeholder="Click on me to write">
+                    <span class="normal">Must have more than 3 letters and numbers</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-poscode">Postal code</label>
+                    <input class="normal" type="text" name="signup-poscode" id="signup-poscode" placeholder="Click on me to write">
+                    <span class="normal">Only number and must have between 4 and 5 numbers.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-email">Email</label>
+                    <input class="normal" type="text" name="signup-email" id="signup-email" placeholder="Click on me to write">
+                    <span class="normal">Invalid email format.</span>
+                </div>
+            </div>
+            <div class="sign-up-column">
+                <div class="normal">
+                    <label for="signup-pwd">Password</label>
+                    <input class="normal" type="password" name="signup-pwd" id="signup-pwd" placeholder="Click on me to write">
+                    <span class="normal">At least 8 characters, made up of letters and numbers.</span>
+                </div>
+                <div class="normal">
+                    <label for="signup-rpwd">Repeat Password</label>
+                    <input class="normal" type="password" name="signup-rpwd" id="signup-rpwd" placeholder="Click on me to write">
+                    <span class="normal">Passwords do not match</span>
+                </div>
+                <div>
+                    <input class="submit" id="signup-submit" type="submit" name="signup-submit" value="CREATE NEW ACCOUNT">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="https://ar.linkedin.com/" target="_blank">
+                <img src="../assets/linkedin.svg" alt="linkedin-icon">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="../assets/twitter.svg" alt="twitter-icon">
+            </a>
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="../assets/facebook.svg" alt="facebook-icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../assets/instagram.svg" alt="instagram-icon">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="../assets/githab.svg" alt="git-hub-icon">
+            </a>
+        </div>
+        <p>Rosario, Argentina</p>
+        <p>Copyright © 2022 Trackgenix S.A. All rights reserved.</p>
+    </footer>
+    <script src="../javascript/sign-up.js"></script>
+</body>
+</html>
