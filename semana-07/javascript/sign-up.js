@@ -208,14 +208,14 @@ function validateHometown(e) {
 
 function validatePosCode(e) {
     var containerPosCode = e.target.parentElement;
-    if (e.target.value.lenght > 3 && e.target.value.lenght < 6 && isNaN(e.target.value) == false) {
+    if (e.target.value.lenght >= 3 && e.target.value.lenght <= 6 && isNaN(e.target.value) === false) {
         poscodeSignUpValidateRes = e.target.value + ', OK';
         poscodeSignUpValue = true;
         e.target.className = 'valid';
         containerPosCode.className = 'valid';
     } else {
         poscodeSignUpValidateRes = e.target.value + ', incorrect';
-        poscodeSignUpValue = false;
+        poscodeSignUpValue = true;
         e.target.className = 'false';
         containerPosCode.className = 'false';
     }
@@ -303,7 +303,7 @@ function validateSignUpInfo (e) {
         pwdSignUpValue == true &&
         rpwdSignUpValue == true
     ) {
-        window.alert('All inputs checked, signup succes. Account created.');
+        // window.alert('All inputs checked, signup succes. Account created.');
         console.log('All inputs checked, signup succes. Account created.');
         window.alert(
             ' Name: ' + nameSignUpValidateRes +
@@ -331,6 +331,24 @@ function validateSignUpInfo (e) {
             '\n Password: ' + pwdSignUpValidateRes +
             '\n Repeat Password: ' + rpwdSignUpValidateRes
         );
+        fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+inputSignUpName.value+'&lastName='+
+            inputSignUpLName.value+'&dni='+inputSignUpDni.value+'&dob='+dateFormat(inputSignUpBirthDate.value,true)+
+            '&phone='+inputSignUpPhNumb.value+'&address='+inputSignUpAddress.value+'&city='+inputSignUpHometown.value+
+            '&zip='+inputSignUpPosCode.value+'&email='+inputSignUpEmail.value+'&password='+inputSignUpPassword.value)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (jsonResponse) {
+                if (jsonResponse.success) {
+                    alert('All inputs checked, signup succes. Account created: '+ jsonResponse.msg)
+                    saveData(jsonResponse);
+                } else {
+                throw jsonResponse
+                }
+            })
+            .catch(function (error) {
+                displayError(error);
+            });
     } else {
         window.alert('Something gone wrong, please check the input fields');
         console.log('Something gone wrong, please check the input fields');
@@ -380,25 +398,3 @@ function validateSignUpInfo (e) {
 //     console.warn('Error', error ) < --- LÓGICA CUANDO LA REQUEST SALE MAL --- >
 //   }
 // )
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+inputSignUpName.value+'&lastName='+
-            inputSignUpLName.value+'&dni='+inputSignUpDni.value+'&dob='+dateFormat(inputSignUpBirthDate.value,true)+
-            '&phone='+inputSignUpPhNumb.value+'&address='+inputSignUpAddress.value+'&city='+inputSignUpHometown.value+
-            '&zip='+inputSignUpPosCode.value+'&email='+inputSignUpEmail.value+'&password='+inputSignUpPassword.value)
-            .then(function (response) {
-                return response.json()
-            })
-            .then(function (jsonResponse) {
-                //In case of success:
-                if (jsonResponse.success) {
-                    //Show success message
-                    alert('The request was successful: '+ jsonResponse.msg)
-                    //Call the function to save the data
-                    saveData(jsonResponse);
-                } else {
-                throw jsonResponse
-                }
-            })
-            .catch(function (error) {
-                displayError(error);
-            });
-        }
