@@ -9,6 +9,8 @@ var emailValidateRes;
 var emailLogInValue;
 var pwdValidateRes;
 var pwdLogInValue;
+var emailCorrectValue = 'rose@radiumrocket.com';
+var pwdCorrectValue = 'BaSP2022';
 
 // Listener
 btnSubmit.addEventListener('click', validateLoginInfo);
@@ -17,20 +19,27 @@ inputEmail.addEventListener('focus', inFocusEmail);
 inputPassword.addEventListener('blur', validatePassword);
 inputPassword.addEventListener('focus', inFocusPwd);
 
+// LocalStorage
+if (localStorage.length > 0) {
+    inputEmail.value = localStorage.getItem('email') ? localStorage.getItem('email') : '';
+    inputPassword.value = localStorage.getItem('password') ? localStorage.getItem('password') : '';
+};
+
 // Functions
 function validateEmail (e) {
     var containerE = e.target.parentElement;
     if (emailFormat.test(e.target.value) == true) {
         emailValidateRes = 'Correct';
-        emailLogInValue = true;
+        // emailLogInValue = true;
         e.target.className = 'valid';
         containerE.className = 'valid';
     } else {
         emailValidateRes = 'Incorrect';
-        emailLogInValue = false;
+        // emailLogInValue = false;
         e.target.className = 'invalid';
         containerE.className = 'invalid';
     }
+    emailLogInValue = e.target.value == 'rose@radiumrocket.com' ? true : false;
 }
 
 function validatePassword(e) {
@@ -45,17 +54,18 @@ function validatePassword(e) {
         }
     }
     var containerP = e.target.parentElement;
-    if (e.target.value.length >= 8 && num >= 1 && char >= 1) {
+    if (e.target.value.length >= 8 && num >= 1 && char >= 1 && e.target.value == pwdCorrectValue) {
         pwdValidateRes = 'Correct';
-        pwdLogInValue = true;
+        // pwdLogInValue = true;
         e.target.className = 'valid';
         containerP.className = 'valid';
     } else {
         pwdValidateRes = 'Incorrect';
-        pwdLogInValue = false;
+        // pwdLogInValue = false;
         e.target.className = 'invalid';
         containerP.className = 'invalid';
     }
+    pwdLogInValue = e.target.value == 'BaSP2022' ? true : false;
 }
 
 function inFocusEmail(x) {
@@ -72,20 +82,19 @@ function validateLoginInfo (e) {
     e.preventDefault();
     if (emailLogInValue == true && pwdLogInValue == true) {
         console.log('All inputs checked, succesfully login. Welcome!');
-        fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?email='+inputSignUpEmail.value+'&password='+inputSignUpPassword.value)
+        fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+inputEmail.value+'&password='+inputPassword.value)
             .then(function (response) {
                 return response.json()
             })
             .then(function (jsonResponse) {
                 if (jsonResponse.success) {
                     alert('All inputs checked, succesfully login. Welcome! :'+ jsonResponse.msg)
-                    saveData(jsonResponse);
                 } else {
                 throw jsonResponse
                 }
             })
             .catch(function (error) {
-                displayError(error);
+                console.warn('Error', error );
             });
     } else {
         window.alert('Something gone wrong, please check the input fields');
