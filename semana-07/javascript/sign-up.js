@@ -140,6 +140,28 @@ function validateBirthDate(e) {
     }
 }
 
+function dateFormat (value,UIformat) {
+    var date = new Date(value);
+    var dd = date.getDate()+1;
+    var mm = date.getMonth()+1;
+    var yyyy = date.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd;
+    };
+    if (mm < 10) {
+        mm = '0' + mm;
+    };
+    if (UIformat) {
+        return mm + '/' + dd + '/' + yyyy;
+    } else {
+        dd = Number(dd)-1;
+        if (dd < 10) {
+            dd = '0' + dd;
+        };
+        return yyyy + '-' + mm + '-' + dd;
+    };
+}
+
 function validatePhNumb(e) {
     var containerPhNum = e.target.parentElement;
     if (e.target.value.length = 10 && isNaN(e.target.value) == false) {
@@ -303,46 +325,45 @@ function validateSignUpInfo (e) {
         pwdSignUpValue == true &&
         rpwdSignUpValue == true
     ) {
-        // window.alert('All inputs checked, signup succes. Account created.');
-        console.log('All inputs checked, signup succes. Account created.');
-        window.alert(
-            ' Name: ' + nameSignUpValidateRes +
-            '\n Lastname: ' + lNameSignUpValidateRes +
-            '\n DNI: ' + dniSignUpValidateRes +
-            '\n Birthday Date: ' + birthdaySignUpValidateRes +
-            '\n Phone Number: ' + phNumSignUpValidateRes +
-            '\n Address: ' + addressSignUpValidateRes +
-            '\n Hometown: ' + hometownSignUpValidateRes +
-            '\n Postal Code: ' + poscodeSignUpValidateRes +
-            '\n Email: ' + emailSignUpValidateRes +
-            '\n Password: ' + pwdSignUpValidateRes +
-            '\n Repeat Password: ' + rpwdSignUpValidateRes
-        );
-        console.log(
-            ' Name: ' + nameSignUpValidateRes +
-            '\n Lastname: ' + lNameSignUpValidateRes +
-            '\n DNI: ' + dniSignUpValidateRes +
-            '\n Birthday Date: ' + birthdaySignUpValidateRes +
-            '\n Phone Number: ' + phNumSignUpValidateRes +
-            '\n Address: ' + addressSignUpValidateRes +
-            '\n Hometown: ' + hometownSignUpValidateRes +
-            '\n Postal Code: ' + poscodeSignUpValidateRes +
-            '\n Email: ' + emailSignUpValidateRes +
-            '\n Password: ' + pwdSignUpValidateRes +
-            '\n Repeat Password: ' + rpwdSignUpValidateRes
-        );
         fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+inputSignUpName.value+'&lastName='+
-            inputSignUpLName.value+'&dni='+inputSignUpDni.value+'&dob='+inputSignUpBirthDate.value+
+            inputSignUpLName.value+'&dni='+inputSignUpDni.value+'&dob='+dateFormat(inputSignUpBirthDate.value,true)+
             '&phone='+inputSignUpPhNumb.value+'&address='+inputSignUpAddress.value+'&city='+inputSignUpHometown.value+
             '&zip='+inputSignUpPosCode.value+'&email='+inputSignUpEmail.value+'&password='+inputSignUpPassword.value)
             .then(function (response) {
-                return response.json()
+                return response.json();
             })
             .then(function (jsonResponse) {
                 if (jsonResponse.success) {
-                    alert('All inputs checked, signup succes. Account created: '+ jsonResponse.msg)
+                    alert('All inputs checked, signup succes. Account created: '+ jsonResponse.msg);
+                    console.log('All inputs checked, signup succes. Account created.');
+                    window.alert(
+                        ' Name: ' + nameSignUpValidateRes +
+                        '\n Lastname: ' + lNameSignUpValidateRes +
+                        '\n DNI: ' + dniSignUpValidateRes +
+                        '\n Birthday Date: ' + birthdaySignUpValidateRes +
+                        '\n Phone Number: ' + phNumSignUpValidateRes +
+                        '\n Address: ' + addressSignUpValidateRes +
+                        '\n Hometown: ' + hometownSignUpValidateRes +
+                        '\n Postal Code: ' + poscodeSignUpValidateRes +
+                        '\n Email: ' + emailSignUpValidateRes +
+                        '\n Password: ' + pwdSignUpValidateRes +
+                        '\n Repeat Password: ' + rpwdSignUpValidateRes
+                    );
+                    console.log(
+                        ' Name: ' + nameSignUpValidateRes +
+                        '\n Lastname: ' + lNameSignUpValidateRes +
+                        '\n DNI: ' + dniSignUpValidateRes +
+                        '\n Birthday Date: ' + birthdaySignUpValidateRes +
+                        '\n Phone Number: ' + phNumSignUpValidateRes +
+                        '\n Address: ' + addressSignUpValidateRes +
+                        '\n Hometown: ' + hometownSignUpValidateRes +
+                        '\n Postal Code: ' + poscodeSignUpValidateRes +
+                        '\n Email: ' + emailSignUpValidateRes +
+                        '\n Password: ' + pwdSignUpValidateRes +
+                        '\n Repeat Password: ' + rpwdSignUpValidateRes
+                    );
                 } else {
-                throw jsonResponse
+                throw jsonResponse;
                 }
             })
             .catch(function (error) {
@@ -376,36 +397,36 @@ function validateSignUpInfo (e) {
                     '\n Repeat Password: ' + rpwdSignUpValidateRes
                 );
             });
-    } else {
-        window.alert('Something gone wrong, please check the input fields');
-        console.log('Something gone wrong, please check the input fields');
-        window.alert(
-            ' Name: ' + nameSignUpValidateRes +
-            '\n Lastname: ' + lNameSignUpValidateRes +
-            '\n DNI: ' + dniSignUpValidateRes +
-            '\n Birthday Date: ' + birthdaySignUpValidateRes +
-            '\n Phone Number: ' + phNumSignUpValidateRes +
-            '\n Address: ' + addressSignUpValidateRes +
-            '\n Hometown: ' + hometownSignUpValidateRes +
-            '\n Postal Code: ' + poscodeSignUpValidateRes +
-            '\n Email: ' + emailSignUpValidateRes +
-            '\n Password: ' + pwdSignUpValidateRes +
-            '\n Repeat Password: ' + rpwdSignUpValidateRes
-        );
-        console.log(
-            ' Name: ' + nameSignUpValidateRes +
-            '\n Lastname: ' + lNameSignUpValidateRes +
-            '\n DNI: ' + dniSignUpValidateRes +
-            '\n Birthday Date: ' + birthdaySignUpValidateRes +
-            '\n Phone Number: ' + phNumSignUpValidateRes +
-            '\n Address: ' + addressSignUpValidateRes +
-            '\n Hometown: ' + hometownSignUpValidateRes +
-            '\n Postal Code: ' + poscodeSignUpValidateRes +
-            '\n Email: ' + emailSignUpValidateRes +
-            '\n Password: ' + pwdSignUpValidateRes +
-            '\n Repeat Password: ' + rpwdSignUpValidateRes
-        );
-    }   
+        } else {
+            window.alert('Something gone wrong, please check the input fields');
+            console.log('Something gone wrong, please check the input fields');
+            window.alert(
+                ' Name: ' + nameSignUpValidateRes +
+                '\n Lastname: ' + lNameSignUpValidateRes +
+                '\n DNI: ' + dniSignUpValidateRes +
+                '\n Birthday Date: ' + birthdaySignUpValidateRes +
+                '\n Phone Number: ' + phNumSignUpValidateRes +
+                '\n Address: ' + addressSignUpValidateRes +
+                '\n Hometown: ' + hometownSignUpValidateRes +
+                '\n Postal Code: ' + poscodeSignUpValidateRes +
+                '\n Email: ' + emailSignUpValidateRes +
+                '\n Password: ' + pwdSignUpValidateRes +
+                '\n Repeat Password: ' + rpwdSignUpValidateRes
+            );
+            console.log(
+                ' Name: ' + nameSignUpValidateRes +
+                '\n Lastname: ' + lNameSignUpValidateRes +
+                '\n DNI: ' + dniSignUpValidateRes +
+                '\n Birthday Date: ' + birthdaySignUpValidateRes +
+                '\n Phone Number: ' + phNumSignUpValidateRes +
+                '\n Address: ' + addressSignUpValidateRes +
+                '\n Hometown: ' + hometownSignUpValidateRes +
+                '\n Postal Code: ' + poscodeSignUpValidateRes +
+                '\n Email: ' + emailSignUpValidateRes +
+                '\n Password: ' + pwdSignUpValidateRes +
+                '\n Repeat Password: ' + rpwdSignUpValidateRes
+            );
+        }
 }
 
 // fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?email=’ + inputEmail.value + '&password=' + inputPassword.value)

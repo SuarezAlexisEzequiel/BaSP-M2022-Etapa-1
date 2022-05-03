@@ -28,18 +28,18 @@ if (localStorage.length > 0) {
 // Functions
 function validateEmail (e) {
     var containerE = e.target.parentElement;
-    if (emailFormat.test(e.target.value) == true) {
+    if (emailFormat.test(e.target.value) == true && e.target.value == emailCorrectValue) {
         emailValidateRes = 'Correct';
-        // emailLogInValue = true;
+        emailLogInValue = true;
         e.target.className = 'valid';
         containerE.className = 'valid';
     } else {
         emailValidateRes = 'Incorrect';
-        // emailLogInValue = false;
+        emailLogInValue = false;
         e.target.className = 'invalid';
         containerE.className = 'invalid';
     }
-    emailLogInValue = e.target.value == 'rose@radiumrocket.com' ? true : false;
+    // emailLogInValue = e.target.value == 'rose@radiumrocket.com' ? true : false;
 }
 
 function validatePassword(e) {
@@ -56,16 +56,16 @@ function validatePassword(e) {
     var containerP = e.target.parentElement;
     if (e.target.value.length >= 8 && num >= 1 && char >= 1 && e.target.value == pwdCorrectValue) {
         pwdValidateRes = 'Correct';
-        // pwdLogInValue = true;
+        pwdLogInValue = true;
         e.target.className = 'valid';
         containerP.className = 'valid';
     } else {
         pwdValidateRes = 'Incorrect';
-        // pwdLogInValue = false;
+        pwdLogInValue = false;
         e.target.className = 'invalid';
         containerP.className = 'invalid';
     }
-    pwdLogInValue = e.target.value == 'BaSP2022' ? true : false;
+    // pwdLogInValue = e.target.value == 'BaSP2022' ? true : false;
 }
 
 function inFocusEmail(x) {
@@ -89,6 +89,8 @@ function validateLoginInfo (e) {
             .then(function (jsonResponse) {
                 if (jsonResponse.success) {
                     alert('All inputs checked, succesfully login. Welcome! :'+ jsonResponse.msg)
+                    window.alert('Email: ' + emailValidateRes + '\nPassword: ' + pwdValidateRes);
+                    console.log('Email: ' + emailValidateRes + '\nPassword: ' + pwdValidateRes);
                 } else {
                 throw jsonResponse
                 }
