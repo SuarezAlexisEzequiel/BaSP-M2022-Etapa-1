@@ -87,6 +87,7 @@ function validateName(e) {
         nameSignUpValue = true;
         e.target.className = 'valid';
         containerName.className = 'valid';
+        localStorage.setItem('name', e.target.value);
     } else {
         nameSignUpValidateRes = e.target.value + ', sorry I dont think that is a name';
         nameSignUpValue = false;
@@ -102,6 +103,7 @@ function validateLName(e) {
         lNameSignUpValue = true;
         e.target.className = 'valid';
         containerLName.className = 'valid';
+        localStorage.setItem('lastName', e.target.value);
     } else {
         lNameSignUpValidateRes = e.target.value + ', must have more than 3 characters. Only Text';
         lNameSignUpValue = false;
@@ -117,6 +119,7 @@ function validateDni(e) {
         dniSignUpValue = true;
         e.target.className = 'valid';
         containerDni.className = 'valid';
+        localStorage.setItem('dni', e.target.value);
     } else {
         dniSignUpValidateRes = e.target.value + ', incorrect';
         dniSignUpValue = false;
@@ -137,6 +140,7 @@ function validateBirthDate(e) {
         birthdaySignUpValue = true;
         e.target.className = 'valid';
         containerBirthdayDate.className = 'valid';
+        localStorage.setItem('dob', e.target.value);
     }
 }
 
@@ -169,6 +173,7 @@ function validatePhNumb(e) {
         phNumSignUpValue = true;
         e.target.className = 'valid';
         containerPhNum.className = 'valid';
+        localStorage.setItem('phone', e.target.value);
     } else {
         phNumSignUpValidateRes = e.target.value + ', incorrect';
         phNumSignUpValue = false;
@@ -205,6 +210,7 @@ function validateAddress(e) {
         addressSignUpValue = true;
         e.target.className = 'valid';
         containerAddress.className = 'valid';
+        localStorage.setItem('address', e.target.value);
     } else {
         addressSignUpValidateRes = e.target.value + ', incorrect';
         addressSignUpValue = false;
@@ -220,6 +226,7 @@ function validateHometown(e) {
         hometownSignUpValue = true;
         e.target.className = 'valid';
         containerHometown.className = 'valid';
+        localStorage.setItem('city', e.target.value);
     } else {
         hometownSignUpValidateRes = e.target.value + ', incorrect';
         hometownSignUpValue = false;
@@ -235,6 +242,7 @@ function validatePosCode(e) {
         poscodeSignUpValue = true;
         e.target.className = 'valid';
         containerPosCode.className = 'valid';
+        localStorage.setItem('zip', e.target.value);
     } else {
         poscodeSignUpValidateRes = e.target.value + ', incorrect';
         poscodeSignUpValue = true;
@@ -250,6 +258,7 @@ function validateSignUpEmail (e) {
         emailSignUpValue = true;
         e.target.className = 'valid';
         containerEm.className = 'valid';
+        localStorage.setItem('email', e.target.value);
     } else {
         emailSignUpValidateRes = e.target.value + ', incorrect';
         emailSignUpValue = false;
@@ -282,6 +291,7 @@ function validateSignUpPwd (e) {
         e.target.className = 'valid';
         containerPwd.className = 'valid';
         pwdValue = e.target.value;
+        localStorage.setItem('password', e.target.value);
     } else {
         pwdSignUpValidateRes = e.target.value + ', incorrect';
         pwdSignUpValue = false;
@@ -428,21 +438,3 @@ function validateSignUpInfo (e) {
             );
         }
 }
-
-// fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?email=’ + inputEmail.value + '&password=' + inputPassword.value)
-//   .then(function (response) {
-//     return response.json()
-//   })
-//   .then(function (jsonResponse) {
-//     console.log("json", jsonResponse)
-//     if (jsonResponse.success) {
-//       console.log("Good", jsonResponse)
-// 	< --- LÓGICA CUANDO LA REQUEST ES EXITOSA Y MOSTRAR UN ALERT --- >
-//     } else {
-//       throw jsonResponse
-//     }
-//   })
-//   .catch(function (error) {
-//     console.warn('Error', error ) < --- LÓGICA CUANDO LA REQUEST SALE MAL --- >
-//   }
-// )

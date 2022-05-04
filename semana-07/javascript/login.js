@@ -33,6 +33,7 @@ function validateEmail (e) {
         emailLogInValue = true;
         e.target.className = 'valid';
         containerE.className = 'valid';
+        localStorage.setItem('email', e.target.value);
     } else {
         emailValidateRes = 'Incorrect';
         emailLogInValue = false;
@@ -59,6 +60,7 @@ function validatePassword(e) {
         pwdLogInValue = true;
         e.target.className = 'valid';
         containerP.className = 'valid';
+        localStorage.setItem('password', e.target.value);
     } else {
         pwdValidateRes = 'Incorrect';
         pwdLogInValue = false;
